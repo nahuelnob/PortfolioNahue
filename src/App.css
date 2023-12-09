@@ -1,0 +1,18 @@
+.container{
+  background: black;
+  border: 1px solid;
+  color: lightgray;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;  divide en fracciones el total --> Sirve para no tner q poner 33.3 y no poner anchos fijos*/
+  /* grid-template-columns: 25% 25% 50%; */
+  grid-template-columns: 1fr 1fr repeat(2, 1fr);
+  /* Para cuando me genera las filas automaticas le puedo poner el tamaño */
+  grid-auto-rows: 2rem;
+}
+
+
+.container div{
+  background: red;
+  border: 1px solid white;
+
+}
