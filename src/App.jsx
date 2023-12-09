@@ -1,12 +1,11 @@
 import "./App.css";
 import { Route, Routes } from "react-router";
-
+import Banner from "./Components/Banner/Banner.jsx";
 function App() {
   return (
     <div>
-      HOLA
       <Routes>
-        {/* <Route path="/" element={} /> */}
+        <Route path="/banner" element={<Banner/>}/>
       </Routes>
     </div>
   );
