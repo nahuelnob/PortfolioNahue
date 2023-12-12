@@ -22,35 +22,42 @@ const NavBar = () => {
       ) : (
         <div class="material-symbols-outlined">terminal</div>
       )}
-      <div className={style.separador}>|</div>
-      {desplegado ? (
-        <div className={style.links}>Skills</div>
-      ) : (
-        <div class="material-symbols-outlined">code</div>
-      )}
-      <div className={style.separador}>|</div>
-      {desplegado ? (
-        <div className={style.links}>Educacion</div>
-      ) : (
-        <div class="material-symbols-outlined">school</div>
-      )}
-      <div className={style.separador}>|</div>
-      {desplegado ? (
-        <div className={style.links}>Certificados</div>
-      ) : (
-        <div class="material-symbols-outlined">check_box</div>
-      )}
+
       <div className={style.separador}>|</div>
       {desplegado ? (
         <div className={style.links}>Contacto</div>
       ) : (
         <div class="material-symbols-outlined">contacts</div>
       )}
+      <div className={style.separador}>|</div>
+      {desplegado ? (
+        <div className={style.links}>Modo</div>
+      ) : (
+        <div class="material-symbols-outlined">contacts</div>
+      )}
+
+      {/* <img
+        src="https://res.cloudinary.com/nahuesantini/image/upload/v1702163789/brand/isologoBlanco_r3uhb5.png"
+        alt=""
+        className={style.logo}
+      />
 
       <img
-        src="https://res.cloudinary.com/nahuesantini/image/upload/v1702163789/brand/isologoBlanco_r3uhb5.png"
-        alt="" className={style.logo}
+        src="https://res.cloudinary.com/nahuesantini/image/upload/v1702161475/brand/logoBlaco_sqtghg.png"
+        alt=""
+        className={style.logo}
       />
+      <img
+        src="https://res.cloudinary.com/nahuesantini/image/upload/v1702161474/brand/isologo_q5fmwz.png"
+        alt=""
+        className={style.logo}
+      />
+      <img
+        src="https://res.cloudinary.com/nahuesantini/image/upload/v1702418333/brand/isologoBlanco2_kalaaz.png"
+        alt=""
+        className={style.logo}
+      /> */}
+
     </nav>
   );
 };
