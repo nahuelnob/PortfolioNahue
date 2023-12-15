@@ -69,49 +69,6 @@
   top: 8rem;
   filter:drop-shadow(1px 1px 2px black);
 }
-/* .column1 {
-  margin-left: 1rem;
-}
-.foto {
-  height: 100vh;
-}
-.persona {
-  position: absolute;
-  top: 2.5rem;
-  height: 100vh;
-  filter: grayscale(100%) drop-shadow(1px 1px 4px black);
-}
-.persona:hover {
-  filter: grayscale(0%) drop-shadow(1px 1px 4px black);
-  transition: ease-in-out 0.2s;
-}
-.nombre {
-  position: absolute;
-  font-size: 8rem;
-  top: 5rem;
-  left: 9rem;
-  filteremr: drop-shadow(5px 5px 4px black);
-  color: #811f1f;
-}
-.apellido {
-  position: absolute;
-  font-size: 8rem;
-  top: 11rem;
-  left: 8rem;
-  z-index: 3;
-  color: #303030;
-  filter: drop-shadow(5px 5px 4px black);
-}
-.puesto {
-  position: absolute;
-  top: 27rem;
-  left: 8.5rem;
-  z-index: 3;
-  font-size: 1.4rem;
-  color: #cacaca;
-  font-weight: 300;
-  filter: drop-shadow(1px 1px 2px black);
-} */
 
 .column2 {
   display: flex;
@@ -126,6 +83,8 @@
   margin-bottom: 3rem;
   text-align: end;
   line-height: 1.8rem;
+  filter:drop-shadow(1px 1px 2px black);
+
 }
 .skills {
   position: absolute;
@@ -144,4 +103,25 @@
 }
 .skill:hover {
   filter: grayscale(25%) drop-shadow(1px 3px 3px black);
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0;
+  }
+  .column1{
+    width: 75%;
+    background-color: #811f1f;
+    justify-self: end;
+    order: 2;
+    display: grid;
+  }
+  .column2{
+    display: none;
+  }
+
 }
