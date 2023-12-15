@@ -1,3 +1,4 @@
+import Toggle from "../Toggle/Toggle";
 import style from "./Navbar.module.css";
 const NavBar = () => {
   return (
@@ -18,7 +19,7 @@ const NavBar = () => {
         <div className={style.link}>
           <p>Contacto</p>
         </div>
-        <div>{/* <button>modo</button> */}</div>
+        <div className={style.toggle}><Toggle/></div>
       </div>
 
       <div className={style.linksDesp}>
