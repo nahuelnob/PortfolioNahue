@@ -6,45 +6,46 @@ const About = () => {
         <section>
           <h1 className={style.nombre}>NAHUEL</h1>
           <h1 className={style.apellido}>SANTINI</h1>
-          <h2 className={style.puesto}>
-            FullStack Developer | Data Science Jr. Analyst
-          </h2>
+          <h1 className={style.puesto}>
+            FullStack Developer <span className={style.anpersand}>&</span> Data
+            Science Analyst Jr.
+          </h1>
+          <hr className={style.hr} />
         </section>
         <section>
           <img
             className={style.persona}
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707253/Portfolio/IMG_20220813_110728364_PORTRAIT_wesmz0.png"
             src="https://res.cloudinary.com/nahuesantini/image/upload/v1702605340/brand/nahue_fndepj.png"
+            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/euhan_uygofm.png"
             alt=""
           />
           <img
             className={style.foto}
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg"
             src="https://res.cloudinary.com/nahuesantini/image/upload/v1702605341/brand/NahueParque_uc1iee.jpg"
+            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/ParqueNahue_gdtcuv.jpg"
             alt=""
           />
         </section>
       </div>
 
       <div className={style.column2}>
-      <div className={style.presentacion}>
-        <p>
-          Mi búsqueda constante de crecimiento personal y profesional me ha
-          llevado a enfrentar desafíos en el emocionante mundo de la tecnología.
-        </p>
-        <p>
-          Tanto el desarrollo de aplicaciones y sitios web, como la exploración
-          de datos, me han inspirado y me han permitido combinar mis habilidades
-          y pasiones.
-        </p>
-        <p>
-          Me he formado en campos tan diversos como
-          Economía y Diseño Gráfico. Estoy emocionado por seguir desarrollándome
-          profesionalmente y abierto a nuevas oportunidades que me permitan
-          aplicar mis conocimientos y habilidades.
-        </p>
-      </div>
-      <section className={style.skills}>
+        <article className={style.presentacion}>
+          <p>
+            ¡Hola! Soy Nahuel Santini, desarrollador full stack y analista de
+            data science jr. Mi experiencia abarca desde ventas, pasa por diseño
+            gráfico hasta economía. Con habilidades versátiles y un enfoque
+            integral, disfruto creando soluciones impactantes.
+          </p>
+          <p>
+            {" "}
+            Desde el frontend hasta el análisis de datos, estoy listo para
+            contribuir al éxito de tu equipo. ¡Aca te muestro algunos de mis
+            proyectos!
+          </p>
+        </article>
+        <section className={style.skills}>
           <img
             className={style.skill}
             src="https://img.icons8.com/color/240/javascript--v1.png"
@@ -132,9 +133,7 @@ const About = () => {
           alt=""
           width={"40px"}
         /> */}
-        
       </div>
-
     </section>
   );
 };

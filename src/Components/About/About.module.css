@@ -7,6 +7,27 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.column1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  order: 1;
+  margin-left: 3rem;
+}
+.foto {
+  height: 100vh;
+}
+.persona {
+  position: absolute;
+  height: 100vh;
+  top: 2.8rem;
+  right: 0.1rem;
+  filter: grayscale(100%) drop-shadow(1px 1px 4px black);
+}
+.persona:hover {
+  filter: grayscale(0%) drop-shadow(1px 1px 4px black);
+  transition: ease-in-out 0.2s;
+}
 .nombre {
   position: absolute;
   font-size: 8rem;
@@ -26,59 +47,99 @@
 }
 .puesto {
     position: absolute;
-    top: 27rem;
-    right: 8.5rem;
-    z-index: 3;
-    font-size: 1.4rem;
+    top: 2rem;
+    left: 6rem;
+    font-size: 2rem;
     color: #cacaca;
-    font-weight: 300;
+    /* font-weight: 300; */
     filter:drop-shadow(1px 1px 2px black);
+    letter-spacing: 1.5px;
   }
-.column1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  order: 1;
-  margin-left: 3rem;
+.anpersand{
+  font-size: 3rem;
+  color: #811f1f;
 }
-.column2 {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: start;
+.hr{
+  width: 50rem;
+  height: 0.2rem;
+  border: none;
+  background-color: #811f1f;
+  position: absolute;
+  left: 7rem;
+  top: 8rem;
+  filter:drop-shadow(1px 1px 2px black);
 }
-
+/* .column1 {
+  margin-left: 1rem;
+}
 .foto {
   height: 100vh;
 }
-
 .persona {
   position: absolute;
+  top: 2.5rem;
   height: 100vh;
-  top: 2.8rem;
-  right: 0.1rem;
   filter: grayscale(100%) drop-shadow(1px 1px 4px black);
 }
 .persona:hover {
   filter: grayscale(0%) drop-shadow(1px 1px 4px black);
   transition: ease-in-out 0.2s;
 }
+.nombre {
+  position: absolute;
+  font-size: 8rem;
+  top: 5rem;
+  left: 9rem;
+  filteremr: drop-shadow(5px 5px 4px black);
+  color: #811f1f;
+}
+.apellido {
+  position: absolute;
+  font-size: 8rem;
+  top: 11rem;
+  left: 8rem;
+  z-index: 3;
+  color: #303030;
+  filter: drop-shadow(5px 5px 4px black);
+}
+.puesto {
+  position: absolute;
+  top: 27rem;
+  left: 8.5rem;
+  z-index: 3;
+  font-size: 1.4rem;
+  color: #cacaca;
+  font-weight: 300;
+  filter: drop-shadow(1px 1px 2px black);
+} */
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
 
 .presentacion {
   color: #cacaca;
-  margin-left: 1rem;
+  width: 85%;
+  margin-bottom: 3rem;
   text-align: end;
+  line-height: 1.8rem;
 }
 .skills {
+  position: absolute;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  top: 10rem;
+  left: 7%;
 }
 .skill {
-  width: 5rem;
-  height: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  padding-left: 0.68rem;
+  padding-right: 0.68rem;
+  /* padding-top: 1.5rem; */
   filter: grayscale(100%) drop-shadow(1px 3px 3px black);
 }
 .skill:hover {
