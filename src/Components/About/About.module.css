@@ -1,6 +1,61 @@
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color: #999999;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #202020;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.nombre {
+  position: absolute;
+  font-size: 8rem;
+  top: 12rem;
+  right: 9rem;
+  filter: drop-shadow(5px 5px 4px black);
+  color: #811f1f;
+}
+.apellido {
+  position: absolute;
+  font-size: 8rem;
+  top: 18rem;
+  right: 8rem;
+  z-index: 3;
+  color: #303030;
+  filter: drop-shadow(5px 5px 4px black);
+}
+.column1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  order: 1;
+}
 
+.foto {
+  height: 100vh;
+}
+
+.persona {
+  position: absolute;
+  height: 100vh;
+  filter: grayscale(100%) drop-shadow(1px 1px 4px black);
+}
+.persona:hover {
+  filter: grayscale(0%) drop-shadow(1px 1px 4px black);
+  transition: ease-in-out 0.2s;
+}
+.puesto {
+  position: absolute;
+  top: 34rem;
+  right: 8.5rem;
+  z-index: 3;
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 300;
+  /* filter:drop-shadow(1px 1px 2px black); */
+}
+.presentacion{
+    position: absolute;
+    width: 60%;
+    left: 8rem;
+    right: 1rem;
 }
