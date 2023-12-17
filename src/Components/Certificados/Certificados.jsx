@@ -2,6 +2,8 @@ import style from "./Certificados.module.css";
 const Certificados = () => {
   return (
     <div className={style.container}>
+      <i class="fi fi-rs-id-badge">nahue</i>
+      <i class="fi fi-sr-home"></i>
       <section className={style.carousel}>
         <div className={style.henry}>.</div>
         <div className={style.tramo1}>.</div>
