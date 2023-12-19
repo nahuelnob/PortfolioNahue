@@ -2,24 +2,18 @@ import style from "./About.module.css";
 const About = () => {
   return (
     <section className={style.container}>
-      <div className={style.column1}>
-        <section>
+      <header className={style.header}>
+        <h1 className={style.puesto}>
+          FullStack Developer <span className={style.anpersand}>&</span> Data
+          Science Analyst Jr.
+        </h1>
+        {/* <hr className={style.hr} /> */}
+      </header>
+
+      <main className={style.main}>
+        <div className={style.column1}>
           <h1 className={style.nombre}>NAHUEL</h1>
           <h1 className={style.apellido}>SANTINI</h1>
-          <h1 className={style.puesto}>
-            FullStack Developer <span className={style.anpersand}>&</span> Data
-            Science Analyst Jr.
-          </h1>
-          <hr className={style.hr} />
-        </section>
-        <section>
-          <img
-            className={style.persona}
-            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707253/Portfolio/IMG_20220813_110728364_PORTRAIT_wesmz0.png"
-            src="https://res.cloudinary.com/nahuesantini/image/upload/v1702605340/brand/nahue_fndepj.png"
-            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/euhan_uygofm.png"
-            alt=""
-          />
           <img
             className={style.foto}
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg"
@@ -27,25 +21,33 @@ const About = () => {
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/ParqueNahue_gdtcuv.jpg"
             alt=""
           />
-        </section>
-      </div>
+          <img
+            className={style.persona}
+            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707253/Portfolio/IMG_20220813_110728364_PORTRAIT_wesmz0.png"
+            src="https://res.cloudinary.com/nahuesantini/image/upload/v1702605340/brand/nahue_fndepj.png"
+            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/euhan_uygofm.png"
+            alt=""
+          />
+        </div>
+        <div className={style.column2}>
+          <article className={style.article}>
+            <p>
+              ¡Hola! Soy Nahuel Santini, desarrollador full stack y analista de
+              data science jr. Mi experiencia abarca desde ventas, pasa por
+              diseño gráfico hasta economía. Con habilidades versátiles y un
+              enfoque integral, disfruto creando soluciones impactantes.
+            </p>
+            <p>
+              {" "}
+              Desde el frontend hasta el análisis de datos, estoy listo para
+              contribuir al éxito de tu equipo. ¡Aca te muestro algunos de mis
+              proyectos!
+            </p>
+          </article>
+        </div>
+      </main>
 
-      <div className={style.column2}>
-        <article className={style.presentacion}>
-          <p>
-            ¡Hola! Soy Nahuel Santini, desarrollador full stack y analista de
-            data science jr. Mi experiencia abarca desde ventas, pasa por diseño
-            gráfico hasta economía. Con habilidades versátiles y un enfoque
-            integral, disfruto creando soluciones impactantes.
-          </p>
-          <p>
-            {" "}
-            Desde el frontend hasta el análisis de datos, estoy listo para
-            contribuir al éxito de tu equipo. ¡Aca te muestro algunos de mis
-            proyectos!
-          </p>
-        </article>
-        <section className={style.skills}>
+      {/* <section className={style.skills}>
           <img
             className={style.skill}
             src="https://img.icons8.com/color/240/javascript--v1.png"
@@ -106,8 +108,8 @@ const About = () => {
             src="https://img.icons8.com/fluency/240/github.png"
             alt="github"
           />
-        </section>
-      </div>
+        </section> */}
+      {/* </div> */}
     </section>
   );
 };
