@@ -8,7 +8,16 @@ const NavBar = () => {
         alt=""
         className={style.logo}
       />
-      <hr style={{position:"absolute", width:"3rem", top:"5rem"}}/>
+      <hr
+        style={{
+          position: "absolute",
+          width: "6vh",
+          top: "12vh",
+          height:"0.2vh",
+          backgroundColor: "#811f1f",
+          border:"#811f1f"
+        }}
+      />
 
       <div className={style.links}>
         <div className={style.link}>
@@ -20,9 +29,7 @@ const NavBar = () => {
         <div className={style.link}>
           <i class="fa-solid fa-address-card" />
         </div>
-        <div className={style.toggle}>
-          {/* <Toggle /> */}
-        </div>
+        <div className={style.toggle}>{/* <Toggle /> */}</div>
       </div>
     </nav>
   );

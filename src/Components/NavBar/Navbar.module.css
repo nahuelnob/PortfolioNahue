@@ -4,16 +4,17 @@
   height: 100vh;
   position: fixed;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 13vh 87vh;
   grid-template-columns: 1fr;
   background-color: #202020;
-  transition: ease-in-out 0.5s;
   justify-items: center;
   filter: drop-shadow(0px 1px 5px rgba(255, 255, 255, 0.247));
+  z-index: 1;
 }
 
 .logo {
-  height: 2.5rem;
+  position: relative;
+  height: 8vh;
   align-self: start;
   justify-self: center;
   margin-top: 1rem;
@@ -21,17 +22,18 @@
 
 .links {
   display: grid;
+  padding-top: 5vh;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr;
-  row-gap: 3.6rem;
+  row-gap: 5vh;
   order: 0;
   justify-self: center;
-  align-self: start;
-  margin-bottom: 18rem;
+  align-self: flex-start;
   color: #cacaca;
 }
 .link {
   cursor: pointer;
+  height: 1vh;
 }
 .link:hover {
   transition: ease-in-out 0.5s;
