@@ -6,6 +6,7 @@
   grid-template-rows: repeat(2, 1fr);
 }
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -14,12 +15,21 @@
   justify-content: center;
   margin-left: 8vh;
   .puesto{
-    font-size: 300%;
+    font-size: 6vh;
     color: whitesmoke;
   }
   .anpersand{
     font-size: 9vh;
     color: #811f1f;
+  }
+  .hr{
+    position: absolute;
+    bottom: -1.5vh;
+    width: 80%;
+    z-index: 3;
+    height: 0.3vh;
+    border: none;
+    background-color: #811f1f;
   }
 }
 .main {
@@ -36,46 +46,70 @@
   align-items: start;
   justify-content: end;
   order: 1;
-  z-index: 3;
+  z-index: 0;
+  background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg");
+  background-size: cover;
+  background-position: end;
+
   .foto{
+    position: relative;
     height: 120vh;
+    /* transform: scaleX(-1); */
+    top: -13%;
+    left: -40%;
   }
   .persona{
     position: absolute;
     height: 122vh;
-    top: -1.5vh;
+    top: -15%;
     filter: grayscale(95%) drop-shadow(2px 2px 4px black);
+    /* transform: scaleX(-1); */
+    z-index: 1;
   }
   .persona:hover{
     filter: grayscale(5%) drop-shadow(2px 2px 4px black);
   }
   .nombre{
-    font-size: 17vh;
+    font-size: 20vh;
     position: absolute;
-    left: 6vh;
-    top: 25vh;
+    right: 25%;
+    top: 10%;
     color: #303030;
-    filter: drop-shadow(1px 2px 2px black);
+    filter: drop-shadow(3px 3px 3px black);
   }
   .apellido{
-    font-size: 17vh;
+    font-size: 20vh;
     position: absolute;
-    left: 6vh;
-    top: 38vh;
+    right: 23%;
+    top: 27%;
     z-index: 1;
     color: #811f1f;
-    filter: drop-shadow(1px 2px 2px black);
+    filter: drop-shadow(3px 3px 3px black);
   }
+}
+.column1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-75deg, #20202000, #20202075, #202020, #202020);
+  /* background-image: linear-gradient(to right, #202020 15%, #20202010); */
+
 }
 .column2{
   overflow: hidden;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: end;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .article{
-  width: 80%;
-  text-align: right;
+  width: 85%;
+  height: 35%;
+  text-align: justify;
+  font-size: 2.5vh;
+  color: whitesmoke;
 }

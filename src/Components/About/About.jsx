@@ -4,23 +4,21 @@ const About = () => {
     <section className={style.container}>
       <header className={style.header}>
         <h1 className={style.puesto}>
-          FullStack Developer <span className={style.anpersand}>&</span> Data
+          FullStack Developer <span className={style.anpersand}>&&</span> Data
           Science Analyst Jr.
         </h1>
-        {/* <hr className={style.hr} /> */}
+        <hr className={style.hr} />
       </header>
 
       <main className={style.main}>
         <div className={style.column1}>
-          <h1 className={style.nombre}>NAHUEL</h1>
-          <h1 className={style.apellido}>SANTINI</h1>
-          <img
+          {/* <img
             className={style.foto}
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg"
             src="https://res.cloudinary.com/nahuesantini/image/upload/v1702605341/brand/NahueParque_uc1iee.jpg"
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/ParqueNahue_gdtcuv.jpg"
             alt=""
-          />
+          /> */}
           <img
             className={style.persona}
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707253/Portfolio/IMG_20220813_110728364_PORTRAIT_wesmz0.png"
@@ -28,6 +26,8 @@ const About = () => {
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/euhan_uygofm.png"
             alt=""
           />
+          <h1 className={style.nombre}>NAHUEL</h1>
+          <h1 className={style.apellido}>SANTINI</h1>
         </div>
         <div className={style.column2}>
           <article className={style.article}>
