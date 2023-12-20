@@ -1,42 +1,150 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #202020;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #202020;
 }
-.henry{
+.henry {
+  /* background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg"); */
+  width: 300%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem 1rem 1rem 1rem;
+  animation: changeBackground 35s infinite;
+}
+.tramo1 {
+    /* background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png"); */
+    width: 100vh;
+    height: 70vh;
+    background-size: 101%;
+    background-position: center;
+    border-radius: 1rem 1rem 1rem 1rem;
+    animation: changeBackground2 35s infinite;
+}
+.tramo2 {
+  background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png");
+  width: 100vh;
+  height: 70vh;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.tramo3 {
+  background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png");
+  width: 100vh;
+  height: 70vh;
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.coder {
+  background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png");
+  width: 100vh;
+  height: 70vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.botonera {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.boton {
+  border-radius: 100%;
+  width: 2vh;
+  height: 2vh;
+  border: none;
+  background-color: black;
+  margin: 0.5rem;
+}
+
+.henryD,
+.tramo1D,
+.tramo2D,
+.tramo3D,
+.coderD {
+  display: none;
+  transition: ease-in-out 1.2s;
+}
+
+@keyframes changeBackground {
+  0%,
+  100% {
     background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg");
-    width: 60rem;
-    height: 38rem;
-    background-size: cover;
-    background-position: center;
+  }
+  20% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png");
+  }
+  40% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png");
+  }
+  60% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png");
+  }
+  80% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png");
+  }
 }
-.tramo1{
-    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698708352/Portfolio/572ceff3-3da7-4086-9ac0-5028ad78c930_d7vcby.jpg");   
-    width: 60rem;
-    height: 38rem;
-    background-size: cover;
-    background-position: center;
+@keyframes changeBackground {
+  0%,
+  100% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg");
+  }
+  20% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png");
+  }
+  40% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png");
+  }
+  60% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png");
+  }
+  80% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png");
+  }
 }
-.tramo2{
-    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698708342/Portfolio/a5b3af8c-3457-4d41-9380-1d33824f8711_jhjphs.jpg");   
-    width: 60rem;
-    height: 38rem;
-    background-size: cover;
-    background-position: center;
-    border-radius: 1rem;
+@keyframes changeBackground2 {
+  0%,
+  100% {
+      background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png");
+    }
+    20% {
+        background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png");
+    }
+    40% {
+        background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png");
+    }
+    60% {
+        background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png");
+    }
+    80% {
+      background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg");
+    }
 }
-.tramo3{
-    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1702420270/Portfolio/argentina_programa_tramo3_qp7i9k.jpg");   
-    width: 60rem;
-    height: 38rem;
-    background-size: cover;
-    background-position: center;
-}
-.coder{
-    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png");   
-    width: 60rem;
-    height: 38rem;
-    background-size: cover;
-    background-position: center;
+@keyframes changeBackground {
+  0%,
+  100% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg");
+  }
+  20% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png");
+  }
+  40% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png");
+  }
+  60% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png");
+  }
+  80% {
+    background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png");
+  }
 }
