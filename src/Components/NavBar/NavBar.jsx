@@ -13,15 +13,17 @@ const NavBar = () => {
           position: "absolute",
           width: "6vh",
           top: "12vh",
-          height:"0.2vh",
+          height: "0.2vh",
           backgroundColor: "#811f1f",
-          border:"#811f1f"
+          border: "#811f1f",
         }}
       />
 
       <div className={style.links}>
         <div className={style.link}>
-          <i class="fa-solid fa-user"></i>
+          <a href="#About">
+            <i class="fa-solid fa-user"></i>
+          </a>
         </div>
         <div className={style.link}>
           <i class="fa-solid fa-briefcase"></i>
