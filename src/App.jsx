@@ -9,9 +9,6 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Portfolio/>}/>
-        <Route path="/banner" element={<Banner/>}/>
-        <Route path="/navbar" element={<NavBar/>}/>
-        <Route path="/navbar" element={<About/>}/>
       </Routes>
     </div>
   );
