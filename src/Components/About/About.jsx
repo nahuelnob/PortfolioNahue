@@ -1,25 +1,10 @@
-import Certificados from "../Certificados/Certificados";
 import style from "./About.module.css";
 const About = () => {
   return (
     <section className={style.container}>
-      <header className={style.header} id="About">
-        <h1 className={style.puesto}>
-          FullStack Developer <span className={style.anpersand}>&&</span> Data
-          Science Analyst Jr.
-        </h1>
-        {/* <hr className={style.hr} /> */}
-      </header>
 
       <main className={style.main}>
-        <div className={style.column1}>
-          {/* <img
-            className={style.foto}
-            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg"
-            src="https://res.cloudinary.com/nahuesantini/image/upload/v1702605341/brand/NahueParque_uc1iee.jpg"
-            // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/ParqueNahue_gdtcuv.jpg"
-            alt=""
-          /> */}
+        <section className={style.column1}>
           <img
             className={style.persona}
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1698707253/Portfolio/IMG_20220813_110728364_PORTRAIT_wesmz0.png"
@@ -27,25 +12,34 @@ const About = () => {
             // src="https://res.cloudinary.com/nahuesantini/image/upload/v1702669918/brand/euhan_uygofm.png"
             alt=""
           />
+        </section>
+        <section className={style.column2}>
           <h1 className={style.nombre}>NAHUEL</h1>
           <h1 className={style.apellido}>SANTINI</h1>
-        </div>
-        <div className={style.column2}>
-          <article className={style.article}>
+          <hr className={style.hr} />
+          <h1 className={style.fs}>FullStack<span className={style.dev}>developer</span></h1>
+
+          {/* <h1 className={style.ds}>Data Science</h1> */}
+          {/* <h1 className={style.jr}>Analyst jr.</h1> */}
+          {/* <h1 className={style.puesto}>
+          FullStack Developer <span className={style.anpersand}>&&</span> Data
+          Science Analyst Jr.
+        </h1> */}
+          {/* <article className={style.article}>
             <p>
               ¡Hola! Soy Nahuel Santini, desarrollador full stack y analista de
               data science jr. Mi experiencia abarca desde ventas, pasa por
               diseño gráfico hasta economía. Con habilidades versátiles y un
-              enfoque integral, disfruto creando soluciones impactantes.
-            </p>
-            {/* <p>
+              enfoque integral, disfruto creando soluciones impactantes. */}
+          {/* <p>
               {" "}
               Desde el frontend hasta el análisis de datos, estoy listo para
               contribuir al éxito de tu equipo. ¡Aca te muestro algunos de mis
               proyectos!
             </p> */}
-          </article>
-          <section className={style.skills}>
+          {/* </p>
+          </article> */}
+          {/* <section className={style.skills}>
             <img
               className={style.skill}
               src="https://img.icons8.com/color/240/javascript--v1.png"
@@ -106,9 +100,9 @@ const About = () => {
               src="https://img.icons8.com/fluency/240/github.png"
               alt="github"
             />
-          </section>
-          <hr className={style.hr} />
-        </div>
+          </section> */}
+          {/* <hr className={style.hr} /> */}
+        </section>
       </main>
 
       {/* </div> */}
