@@ -1,7 +1,7 @@
 import style from "./About.module.css";
 const About = () => {
   return (
-    <section className={style.container}>
+    <section className={style.container} id="About">
 
       <main className={style.main}>
         <section className={style.column1}>
