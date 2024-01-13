@@ -9,7 +9,7 @@ const Portfolio = () => {
         <NavBar/>
         <About/>
         <Proyectos/>
-        {/* <Certificados/> */}
+        <Certificados/>
         </>
     )
 }
