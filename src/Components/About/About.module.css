@@ -163,6 +163,7 @@
     z-index: 1;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 4.3vh;
+    /* animation: marquee 5s linear infinite; */
   }
 
   .skill {
@@ -184,3 +185,12 @@
     border: solid 0.1vh #505050;
   }
 }
+
+/* @keyframes marquee {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-50vw);
+  }
+} */
