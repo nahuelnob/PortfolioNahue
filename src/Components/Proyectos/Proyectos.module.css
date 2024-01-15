@@ -1,55 +1,111 @@
-.container{
-    width: 100%;
-    /* height: 100vh; */
-    background: linear-gradient(
-        145deg,
-        #20202030,
-        #20202050,
-        #202020,
-        #202020,
-        #202020,
-        #202020,
-        #202020,
-        #202020
-      );
-      background-color: #811f1f;
-      display: grid;
-      grid-template-rows: repeat(5, 1fr);
+.container {
+  width: 100%;
+  background: linear-gradient(
+    -145deg,
+    #20202030,
+    #20202050,
+    #202020,
+    #202020,
+    #202020,
+    #202020,
+    #202020,
+    #202020
+  );
+  background-color: #811f1f;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  position: relative;
 }
-
-.titulo{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding-top: 1rem;
-    font-size: 6vh;
-    color: whitesmoke;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;  
+.separador {
+  position: absolute;
+  width: 80%;
+  height: 0.3vh;
+  left: 25vh;
+  top: -0.1vh;
+  background-color: #909090;
+  border-radius: 0.2vh;
 }
-
-.main{
-    grid-row: span 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.header {
     position: relative;
-    width: 100%;
-    overflow: hidden;  
+}
+.titulo{
+    position: absolute;
+    left: 30vh;
+    white-space: nowrap;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+    z-index: 1;
+    font-size: 8vh;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.2vh #909090;
 }
 
-.countries, .codecraft, .padi{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    height: 100vh;
-    background-color: #811f1f;
-    border: solid #202020;
+.main {
+  grid-row: span 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: aliceblue;
 }
 
+.countries,
+.codecraft,
+.padi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  left: 5vh;
+  width: 80%;
+  height: 60vh;
+  background: linear-gradient(
+    45deg,
+    #20202030,
+    #20202050,
+    #202020,
+    #202020,
+    #202020,
+    #202020,
+    #202020,
+    #202020
+  );
+  /* border: solid 0.1vh #909090; */
+  border-radius: 1vh;
+  overflow: hidden;
+  margin-bottom: 1.5vh;
+ box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.imgCountries {
+  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/WhatsApp_Image_2023-11-03_at_18.18.44_tvokuo.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: span 2;
+  cursor: pointer;
+}
+.imgCountries:hover,
+.imgCodecraft:hover,
+.imgPadi:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.5s;
+}
+.imgCodecraft {
+  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703102356/Proyectos/WhatsApp_Image_2023-11-06_at_20.04.00_k0djrn.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: span 2;
+  cursor: pointer;
+}
+.imgPadi {
+  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703635020/Proyectos/padi_login_umcynp.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: span 2;
+  cursor: pointer;
+}
 /* .imgCountries, .imgCodecraft, .imgPadi{
     position: relative;
     width: 40%;
@@ -58,19 +114,4 @@
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     z-index: 1;
 }
-
-.imgCountries{
-    background: url('https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/WhatsApp_Image_2023-11-03_at_18.18.44_tvokuo.jpg');
-    background-size: cover;
-    background-position: center;
-}
-.imgCodecraft{
-    background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703102356/Proyectos/WhatsApp_Image_2023-11-06_at_20.04.00_k0djrn.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.imgPadi{
-    background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703635020/Proyectos/padi_login_umcynp.jpg");
-    background-size: cover;
-    background-position: center;
-} */
+*/
