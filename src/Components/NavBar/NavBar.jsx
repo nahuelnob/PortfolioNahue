@@ -26,12 +26,17 @@ const NavBar = () => {
           </a>
         </div>
         <div className={style.link}>
+          <a href="#Proyectos">
           <i class="fa-solid fa-briefcase"></i>
+          </a>
         </div>
         <div className={style.link}>
           <i class="fa-solid fa-address-card" />
         </div>
         <div className={style.toggle}>{/* <Toggle /> */}</div>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-linkedin"></i>
       </div>
     </nav>
   );
