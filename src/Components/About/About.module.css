@@ -15,15 +15,15 @@
 }
 .column1 {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: start;
   justify-content: end;
   order: 1;
   z-index: 0;
   background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg");
-  background-size: cover;
-  background-position: end;
+  background-size: 155vh;
+  background-position: top;
 
   .foto {
     position: relative;
@@ -34,8 +34,8 @@
   }
   .persona {
     position: absolute;
-    height: 122vh;
-    top: -10vh;
+    height: 90vh;
+    bottom: 0vh;
     filter: grayscale(95%) drop-shadow(2px 2px 4px black);
     /* transform: scaleX(-1); */
     z-index: 1;
@@ -45,10 +45,10 @@
   }
   .puesto {
     position: absolute;
-    left: 0;
+    left: -10vh;
     height: 0vh;
     top: 18.5vh;
-    z-index: 0;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -119,9 +119,9 @@
   background-color: #122923;
   .nombre {
     position: absolute;
-    top: -18vh;
-    left: 28vh;
-    font-size: 18vh;
+    top: -14vh;
+    left: 25vh;
+    font-size: 15vh;
     /* background: linear-gradient(to top, #cf2f2f, #811f1f, #811f1f, #811f1f); */
     background: linear-gradient(
       to bottom,
@@ -145,9 +145,9 @@
   }
   .apellido {
     position: absolute;
-    top: -18vh;
-    left: 100vh;
-    font-size: 18vh;
+    top: -14vh;
+    left: 85vh;
+    font-size: 15vh;
     z-index: 2;
     filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
     background: linear-gradient(to top, #5e5e5e, #696969, #afaeae, #d4d4d4);
@@ -160,10 +160,10 @@
     width: 70%;
     height: 35%;
     text-align: justify;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     color: whitesmoke;
-    margin-right: 8.4vh;
-    line-height: 4.8vh;
+    margin-right: 15vh;
+    line-height: 3.5vh;
   }
   .skills {
     position: absolute;
@@ -191,7 +191,7 @@
   .hrVert {
     position: absolute;
     top: 30vh;
-    left: 101vh;
+    left:93vh;
     height: 50vh;
     border: solid 0.1vh #505050;
   }
