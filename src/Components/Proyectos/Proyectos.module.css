@@ -72,7 +72,7 @@
   margin-bottom: 1.5vh;
   box-shadow: 1px 1px 10px 0px #909090;
   /* background-color: #122923; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top,
     #69fcd5,
     #51bda0,
@@ -81,7 +81,8 @@
     #2d6959,
     #2d6959,
     #2d6959
-  );
+  ); */
+  background-color: #122923;
 }
 .subtitulo {
   font-size: 5vh;
@@ -137,7 +138,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #101010;
+  /* background-color: #101010; */
 }
 .imgCountries {
   background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/WhatsApp_Image_2023-11-03_at_18.18.44_tvokuo.jpg");

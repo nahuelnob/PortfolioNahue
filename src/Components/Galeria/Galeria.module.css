@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #101010fa;
+}
+.botonIzq,
+.botonDer {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  color: #909090;
+  font-size: 5vh;
+  cursor: pointer;
+}
+.botonIzq:hover,
+.botonDer:hover,
+.close:hover {
+  filter: brightness(75%);
+  transform: scale(1.2);
+  transition: ease-in-out 0.3s;
+}
+
+.botonDer {
+  top: 50%;
+  right: 10vh;
+}
+.botonIzq {
+  top: 50%;
+  left: 10vh;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
