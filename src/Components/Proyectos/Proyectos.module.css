@@ -66,11 +66,22 @@
   left: 5vh;
   width: 80%;
   height: 60vh;
-  border: solid 0.1vh #909090;
+  border: double 0.1vh #909090;
   border-radius: 1vh;
   overflow: hidden;
   margin-bottom: 1.5vh;
   box-shadow: 1px 1px 10px 0px #909090;
+  /* background-color: #122923; */
+  background: linear-gradient(
+    to top,
+    #69fcd5,
+    #51bda0,
+    #429a82,
+    #429a82,
+    #2d6959,
+    #2d6959,
+    #2d6959
+  );
 }
 .subtitulo {
   font-size: 5vh;
@@ -188,9 +199,9 @@
   cursor: pointer;
 }
 .imgPadi {
-  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703635020/Proyectos/padi_login_umcynp.jpg");
+  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1705511997/Proyectos/padi_login2_dtxihg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 100%;
   grid-column: span 2;
   cursor: pointer;
 }

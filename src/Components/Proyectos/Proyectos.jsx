@@ -7,8 +7,15 @@ const Proyectos = () => {
   const [galeria, setGaleria] = useState(0)
 
   const handlerChange = (value) => {
-    galeria > 3 ? setGaleria(0) : setGaleria(galeria + value)
-    galeria < 1 ? setGaleria(4) : setGaleria(galeria + value)
+    let newGaleria = galeria + value;
+
+    if (newGaleria > 4) {
+      setGaleria(0);
+    } else if (newGaleria < 0) {
+      setGaleria(4);
+    } else {
+      setGaleria(newGaleria);
+    }
   }
   console.log(galeria);
   ////////////////////////////////////////////////////
@@ -55,15 +62,15 @@ const Proyectos = () => {
             frameBorder="0"
             allowFullScreen
           ></iframe>
-          {/* <section className={style.galeria}>
+          <section className={style.galeria}>
             <button onClick={() => { handlerChange(-1) }}><i class="fa-solid fa-caret-left"></i></button>
-            {(galeria === 0) && <img src="https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/WhatsApp_Image_2023-11-03_at_18.18.44_tvokuo.jpg" alt="login" width={750} />}
+            {(galeria === 0 || galeria === 5) && <img src="https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/WhatsApp_Image_2023-11-03_at_18.18.44_tvokuo.jpg" alt="login" width={750} />}
             {(galeria === 1) && <img src="https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/Registro_xt9ybe.jpg" alt="registro" width={750} />}
             {(galeria === 2) && <img src="https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/home_ibpowk.jpg" alt="home" width={750} />}
             {(galeria === 3) && <img src="https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/Subir_Actividad_mlwsbp.jpg" alt="postActividad" width={750} />}
-            {(galeria === 4) && <img src="https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/Ver_actividades_xdjnfa.jpg" alt="actividades" width={750} />}
+            {(galeria === 4 || galeria === -1) && <img src="https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/Ver_actividades_xdjnfa.jpg" alt="actividades" width={750} />}
             <button onClick={() => handlerChange(1)}><i class="fa-solid fa-caret-right"></i></button>
-          </section> */}
+          </section>
           <button style={{ display: `${youTube ? "flex" : "none"}` }} className={style.close} onClick={() => handler()}>x</button>
         </section>
         <section className={style.codecraft}>
