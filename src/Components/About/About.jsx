@@ -12,17 +12,17 @@ const About = () => {
 
             alt=""
           />
+        </section>
+        <section className={style.column2}>
+          <h1 className={style.nombre}>NAHUEL</h1>
+          <h1 className={style.apellido}>SANTINI</h1>
+          <div className={style.hr} />
           <article className={style.puesto}>
             <h1 className={style.fs}>FullStack</h1>
             <h1 className={style.dev}>developer</h1>
             <h1 className={style.ds}>Data SCience</h1>
             <h1 className={style.jr}>Analyst jr.</h1>
           </article>
-        </section>
-        <section className={style.column2}>
-          <h1 className={style.nombre}>NAHUEL</h1>
-          <h1 className={style.apellido}>SANTINI</h1>
-          <div className={style.hr} />
 
 
           <article className={style.article}>
