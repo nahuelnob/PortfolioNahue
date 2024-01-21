@@ -122,6 +122,7 @@
     top: -14vh;
     left: 25vh;
     font-size: 15vh;
+    -webkit-box-reflect: below 3vh linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
     /* background: linear-gradient(to top, #cf2f2f, #811f1f, #811f1f, #811f1f); */
     background: linear-gradient(
       to bottom,
