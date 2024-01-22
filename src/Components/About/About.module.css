@@ -156,7 +156,7 @@
   .skills {
     position: absolute;
     bottom: 5vh;
-    left: 22vh;
+    left: 27vh;
     width: 50vw;
     display: grid;
     z-index: 1;
@@ -185,6 +185,90 @@
     border: none;
     z-index: 1;
     filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .column2 {
+    .fs,
+    .ds {
+      font-size: 8vh;
+    }
+    .ds {
+      position: relative;
+      top: 3vh;
+    }
+    .jr {
+      position: relative;
+      top: -3.5vh;
+    }
+    .article {
+      position: relative;
+      top: 10vh;
+    }
+    .hrVert {
+      width: 70vw;
+      left: 14vw;
+    }
+    .skills {
+      left: 16vw;
+      column-gap: 1.6vh;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+    .persona {
+      position: absolute;
+      z-index: 1;
+    }
+  .column2 {
+    .nombre {
+      left: 10vw;
+      font-size: 12vh;
+      z-index: 1;
+    }
+    .apellido {
+      font-size: 12vh;
+      left: 48vw;
+    }
+    .puesto {
+      top: 7vh;
+      left: 15vh;
+    }
+    .fs,
+    .ds {
+      font-size: 8vh;
+      white-space: nowrap;
+    }
+    .ds {
+      top: 8vh;
+    }
+    .dev,
+    .jr {
+      font-size: 6vh;
+    }
+    .dev {
+      top: -2vh;
+      left: 36vw;
+    }
+    .jr {
+      top: 6vh;
+      left: 46vw;
+      z-index: -1;
+    }
+    .hrVert {
+      top: 15vh;
+    }
+    .article {
+      position: absolute;
+      top: 40vh;
+      left: 12.5vw;
+      width: 50vw;
+    }
+    .skills {
+      left: 12.5vw;
+      column-gap: 2.5vh;
+    }
   }
 }
 
