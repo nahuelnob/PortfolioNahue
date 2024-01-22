@@ -9,13 +9,11 @@
 .main {
   width: 100%;
   height: 100vh;
-  /* background-color: brown; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .column1 {
   position: relative;
-  /* overflow: hidden; */
   display: flex;
   align-items: start;
   justify-content: end;
@@ -28,7 +26,6 @@
   .foto {
     position: relative;
     height: 120vh;
-    /* transform: scaleX(-1); */
     top: -13%;
     left: -40%;
   }
@@ -37,7 +34,6 @@
     height: 90vh;
     bottom: 0vh;
     filter: grayscale(95%) drop-shadow(2px 2px 4px black);
-    /* transform: scaleX(-1); */
     z-index: 1;
   }
   .persona:hover {
@@ -55,7 +51,6 @@
 }
 .column2 {
   padding-top: 1rem;
-  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: end;
@@ -68,19 +63,17 @@
     #202020,
     #202020
   );
-  /* background-color: #811f1f; */
   background-color: #122923;
   .puesto {
     position: absolute;
-    left: -10vh;
+    left: 26vh;
     height: 0vh;
-    top: 18.5vh;
+    top: 12vh;
     z-index: 2;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: start;
     background-color: #505050;
-    /* overflow: hidden; */
   }
   .fs,
   .ds {
@@ -91,23 +84,21 @@
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: 0.2vh #429a82;
-    /* background: linear-gradient(
-      to bottom,
-      #d44444,
-      #ca3535,
-      #cf3434,
-      #811f1f,
-      #811f1f
-    ); */
     -webkit-background-clip: text;
     color: transparent;
   }
 
   .dev {
-    margin-bottom: -9.5vh;
+    margin-bottom: -25vh;
+    left: 27vw;
+  }
+  .jr {
+    left: 35vw;
   }
   .jr,
   .dev {
+    position: relative;
+    top: -7vh;
     white-space: nowrap;
     filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
     z-index: 1;
@@ -122,7 +113,7 @@
     top: -14vh;
     left: 25vh;
     font-size: 15vh;
-    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0,0,0,0.1), transparent);
+    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
     background: linear-gradient(
       to bottom,
       #69fcd5,
@@ -136,11 +127,10 @@
     -webkit-background-clip: text;
     color: transparent;
     filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-    /* filter: drop-shadow(3px 3px 3px black); */
   }
   .apellido {
     position: absolute;
-    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0,0,0,0.1), transparent);
+    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
     top: -14vh;
     left: 85vh;
     font-size: 15vh;
@@ -152,14 +142,16 @@
   }
   .article {
     position: absolute;
-    top: 32vh;
-    width: 70%;
+    top: 52vh;
+    left: 27vh;
+    width: 100%;
     height: 35%;
     text-align: justify;
     font-size: 2.3vh;
     color: whitesmoke;
     margin-right: 15vh;
     line-height: 3.5vh;
+    z-index: 1;
   }
   .skills {
     position: absolute;
@@ -170,7 +162,6 @@
     z-index: 1;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 4.3vh;
-    /* animation: marquee 5s linear infinite; */
   }
 
   .skill {
@@ -186,10 +177,14 @@
 
   .hrVert {
     position: absolute;
-    top: 30vh;
-    left:93vh;
-    height: 50vh;
-    border: solid 0.1vh #505050;
+    top: 22vh;
+    left: 22vh;
+    width: 60vw;
+    height: 0.1vh;
+    background-color: #909090;
+    border: none;
+    z-index: 1;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
   }
 }
 
