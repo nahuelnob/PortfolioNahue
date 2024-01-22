@@ -122,15 +122,9 @@
     top: -14vh;
     left: 25vh;
     font-size: 15vh;
-    -webkit-box-reflect: below 3vh linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
-    /* background: linear-gradient(to top, #cf2f2f, #811f1f, #811f1f, #811f1f); */
+    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0,0,0,0.1), transparent);
     background: linear-gradient(
       to bottom,
-      /* #d44444,
-      #ca3535,
-      #cf3434,
-      #811f1f,
-      #811f1f */
       #69fcd5,
       #51bda0,
       #429a82,
@@ -146,6 +140,7 @@
   }
   .apellido {
     position: absolute;
+    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0,0,0,0.1), transparent);
     top: -14vh;
     left: 85vh;
     font-size: 15vh;
