@@ -60,7 +60,6 @@
 .homePf,
 .aurisPf,
 .rym {
-  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
@@ -103,12 +102,12 @@
   text-align: left;
   z-index: 0;
   filter: drop-shadow(0.5vh 1vh 1vh #101010);
-  transform: translateX(-3vh);
-  transition: transform ease-in-out 0.5s;
+  transform: translateX(-45vh);
+  transition: transform ease-in-out 0.8s;
 }
 .aside:hover{
   transform: translateX(0vh);
-  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.8s;
 }
 .footer {
   position: absolute;
