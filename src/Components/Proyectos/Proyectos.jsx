@@ -33,7 +33,8 @@ const Proyectos = () => {
 
       <main className={style.main}>
         <section className={style.countries}>
-          <div className={style.imgCountries}><section className={style.galeria}>
+          <div className={style.imgCountries}>
+            <section className={style.galeria}>
             <Galeria imagenes={imagenesCountries} />
             <iframe
               style={{ display: `${youTube ? "flex" : "none"}` }}
@@ -43,19 +44,19 @@ const Proyectos = () => {
               frameBorder="0"
               allowFullScreen
             ></iframe>
-          </section></div>
+          </section>
+          </div>
           <aside className={style.aside} >
-            <h1 className={style.subtitulo}>Countries App</h1>
-            <div className={style.separadorTexto}></div>
-            <p className={style.parrafo}>App que tenía como objetivo buscar, filtrar, ordenar y mostrar países, y además crear actividades
-              relacionadas con ellos,que también cumplan con el mismo requisito de buscar, filtrar y ordenar.
+            <p className={style.parrafo}>App que tenía como objetivo buscar, filtrar, ordenar y mostrar países, y además crear actividades relacionadas con ellos,que también cumplan con el mismo requisito de buscar, filtrar y ordenar.
               Los datos se obtenían desde una Api y se alojaban en la DB, a su vez esta era conectada tanto con el
               back como con el front</p>
-            <footer className={style.footer}>
+            {/* <div className={style.separadorTexto}></div> */}
+            <h1 className={style.subtitulo}>Countries App</h1>
+            {/* <footer className={style.footer}>
               <i onClick={() => handler()} class="fa-brands fa-youtube" style={{ fontSize: "4vh", color: "#707070", cursor: "pointer" }}></i>
-            </footer>
+            </footer> */}
           </aside>
-          <button style={{ display: `${youTube ? "flex" : "none"}` }} className={style.close} onClick={() => handler()}><i class="fa-solid fa-rectangle-xmark" /></button>
+          {/* <button style={{ display: `${youTube ? "flex" : "none"}` }} className={style.close} onClick={() => handler()}><i class="fa-solid fa-rectangle-xmark" /></button> */}
         </section>
         <section className={style.codecraft}>
           <aside className={style.aside}>
