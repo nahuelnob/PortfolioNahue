@@ -1,9 +1,15 @@
-{
-    "RyM": [{"imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1705449865/Proyectos/RM_login_r9dxj2.jpg"]}, {"video" : ""}, {"descripcion":""}],
+{ 
+    "Proyectos": [
 
-    "Countries": {"imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/WhatsApp_Image_2023-11-03_at_18.18.44_tvokuo.jpg", "https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/Registro_xt9ybe.jpg", "https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/home_ibpowk.jpg"], "video" : "https://www.youtube.com/watch?v=C7ZdBGwuOuQ", "descripcion": "App que tenía como objetivo buscar, filtrar, ordenar y mostrar países, y además crear actividades relacionadas con ellos, que también cumplían con el mismo requisito de buscar, filtrar y ordenar. Los datos se obtenían desde una API y se alojaban en la DB. A su vez, esta era conectada tanto con el back como con el front."},
+        {"nombre": "RyM","imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1705449865/Proyectos/RM_login_r9dxj2.jpg"], "video" : "https://www.youtube.com/watch?v=vE5zUr5URqY", "descripcion":"App que tenía como objetivo buscar, filtrar, ordenar y mostrar países, y además crear actividades relacionadas con ellos, que también cumplían con el mismo requisito de buscar, filtrar y ordenar. Los datos se obtenían desde una API y se alojaban en la DB. A su vez, esta era conectada tanto con el back como con el front.", "side":"left"},
+        
+        {"nombre":"Countries","imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/WhatsApp_Image_2023-11-03_at_18.18.44_tvokuo.jpg", "https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/Registro_xt9ybe.jpg", "https://res.cloudinary.com/nahuesantini/image/upload/v1703102270/Proyectos/home_ibpowk.jpg"], "video" : "https://www.youtube.com/watch?v=C7ZdBGwuOuQ", "descripcion": "App que tenía como objetivo buscar, filtrar, ordenar y mostrar países, y además crear actividades relacionadas con ellos, que también cumplían con el mismo requisito de buscar, filtrar y ordenar. Los datos se obtenían desde una API y se alojaban en la DB. A su vez, esta era conectada tanto con el back como con el front.", "index":"2"},
+        
+        {"nombre":"Code", "imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1703102356/Proyectos/WhatsApp_Image_2023-11-06_at_20.04.00_k0djrn.jpg", "https://res.cloudinary.com/nahuesantini/image/upload/v1705450336/Proyectos/loginCodecraft_q0bj6t.jpg"], "video" : "https://www.youtube.com/watch?v=QOPGxEEHxeA", "descripcion":"NOB", "side":"left"},
+        
+        {"nombre":"Padi", "imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1705511997/Proyectos/padi_login2_dtxihg.jpg"], "video" : "https://www.youtube.com/watch?v=0ytwjCz8Mec", "descripcion":"App que tenía como objetivo buscar, filtrar, ordenar y mostrar países, y además crear actividades relacionadas con ellos, que también cumplían con el mismo requisito de buscar, filtrar y ordenar. Los datos se obtenían desde una API y se alojaban en la DB. A su vez, esta era conectada tanto con el back como con el front.", "index":"2"}
+    ]
 
-    "Code": [{"imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1703102356/Proyectos/WhatsApp_Image_2023-11-06_at_20.04.00_k0djrn.jpg", "https://res.cloudinary.com/nahuesantini/image/upload/v1705450336/Proyectos/loginCodecraft_q0bj6t.jpg"]}, {"video" : ""}, {"descripcion":""}],
 
-    "Padi": [{"imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1705511997/Proyectos/padi_login2_dtxihg.jpg"]}, {"video" : ""}, {"descripcion":""}]
+
 }

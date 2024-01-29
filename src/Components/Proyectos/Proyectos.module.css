@@ -58,7 +58,7 @@
   position: relative;
   left: 10vh;
   width: 80%;
-  height: 60vh;
+  height: 60svh;
   margin-bottom: 1.5vh;
 }
 .galeria {
@@ -72,6 +72,61 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+.asideRigth{
+  position: relative;
+  top: 2vh;
+  height: 55vh;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #122923;
+  border-radius: 0vh 1vh 1vh 0vh;
+  z-index: 0;
+  filter: drop-shadow(0.5vh 1vh 1vh #101010);
+  transform: translateX(45vh);
+  transition: transform ease-in-out 0.8s;
+  grid-column: 1;
+  .parrafo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2svh;
+    line-height: 4vh;
+    top: -2svh;
+    width: 85%;
+    height: 100%;
+    padding-left: 3vh;
+    color: whitesmoke;
+    grid-column: span 6;
+    overflow: hidden;
+  }
+  .subtitulo {
+    position: relative;
+    right: 4svh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 4vh;
+    overflow: hidden;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+  }
+  .separadorTexto {
+    margin-top: -2vh;
+    width: 80%;
+    height: 0.3vh;
+    background-color: #909090;
+    margin-left: 5vh;
+  }
+}
+.aside:hover {
+  transform: translateX(0vh);
+  transition: transform ease-in-out 0.8s;
 }
 
 .aside {
@@ -162,56 +217,9 @@
   border-radius: 1svh;
   overflow: hidden;
 }
-/* .imgAboutPf {
-  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703635020/Proyectos/constr_codecraft_d7dk71.jpg");
-  background-size: cover;
-  background-position: center;
-  grid-column: span 2;
-  cursor: pointer;
-  position: relative;
-}
-.imgHomePf {
-  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703635020/Proyectos/hamb_codecraft_hurj6h.jpg");
-  background-size: cover;
-  background-position: center;
-  grid-column: span 2;
-  cursor: pointer;
-  position: relative;
-} */
-/* .imgAurisPf {
-  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703635020/Proyectos/auris_codecraft_vduc8h.jpg");
-  background-size: cover;
-  background-position: center;
-  grid-column: span 2;
-  cursor: pointer;
-  position: relative;
-} */
-/* .imgrym {
-  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1705449865/Proyectos/RM_login_r9dxj2.jpg");
-  background-size: cover;
-  background-position: center;
-  grid-column: span 2;
-  cursor: pointer;
-  position: relative;
-} */
 
 .imgs:hover {
   transform: scale(1.005);
   transition: ease-in-out 0.5s;
 }
-/* .imgCodecraft { */
-  /* background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1703102356/Proyectos/WhatsApp_Image_2023-11-06_at_20.04.00_k0djrn.jpg"); */
-  /* background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1705450336/Proyectos/loginCodecraft_q0bj6t.jpg"); */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* grid-column: span 2; */
-  /* cursor: pointer; */
-/* } */
-/* .imgPadi {
-  background: url("https://res.cloudinary.com/nahuesantini/image/upload/v1705511997/Proyectos/padi_login2_dtxihg.jpg");
-  background-size: cover;
-  background-position: 100%;
-  grid-column: span 2;
-  cursor: pointer; */
-/* } */
 
