@@ -21,6 +21,7 @@ const Certificados = () => {
 
   return (
     <div className={style.container}>
+      <h1 className={style.titulo}><span className={style.barra}>|</span>Certificados</h1>
       <main className={style.carousel}>
         {activo.primero ? (
           <div className={style.henry}></div>

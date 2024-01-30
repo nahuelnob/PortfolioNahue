@@ -148,3 +148,21 @@
     background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png");
   }
 }
+.titulo {
+  position: relative;
+  /* left: 30vh; */
+  white-space: nowrap;
+  filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  z-index: 1;
+  font-size: 8vh;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 0.2vh #429a82;
+  text-transform: uppercase;
+  -webkit-box-reflect: below -6vh linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
+  .barra {
+    -webkit-text-stroke: 0.2vh #909090;
+    color: #909090;
+    margin-right: 1svw;
+  }
+}
