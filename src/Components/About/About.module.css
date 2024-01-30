@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-color: #202020;
+  /* background-color: #202020; */
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
@@ -64,15 +64,16 @@
   align-items: center;
   justify-content: end;
   position: relative;
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
     #20202030,
     #20202050,
     #202020,
     #202020,
     #202020
-  );
-  background-color: #122923;
+  ); */
+  /* background-color: #122923; */
+  background-color: #202020;
   .puesto {
     position: absolute;
     left: 26vh;
