@@ -12,6 +12,7 @@ const About = () => {
 
             alt=""
           />
+          <div className={style.degrade}></div>
         </section>
         <section className={style.column2}>
           <h1 className={style.nombre}>NAHUEL</h1>
