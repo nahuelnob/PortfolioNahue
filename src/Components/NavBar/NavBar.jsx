@@ -12,11 +12,15 @@ const NavBar = () => {
   return (
     <nav className={style.container}>
       <header className={style.header}>
-        <img
+        <section className={style.logotipo}>
+          <h1 className={style.N}>N</h1>
+          <h1 className={style.S}>S</h1>
+        </section>
+        {/* <img
           src="https://res.cloudinary.com/nahuesantini/image/upload/v1702420610/brand/isologoBlanco_lrs5ma.png"
           alt=""
           className={style.logo}
-        />
+        /> */}
         <div className={style.separador} />
       </header>
 
