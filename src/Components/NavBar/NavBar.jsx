@@ -31,7 +31,7 @@ const NavBar = () => {
         <a className={style.link} href="#Proyectos" onClick={(e) => handleClick('Proyectos', e)}>
           <i class="fa-solid fa-briefcase"></i>
         </a>
-        <a className={style.link}>
+        <a className={style.link} href="#Certificados" onClick={(e) => handleClick('Certificados', e)}>
           <i class="fa-solid fa-address-card" />
         </a>
         <div className={style.separador} />
