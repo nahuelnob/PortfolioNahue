@@ -9,6 +9,15 @@
         
         {"nombre": "Rick & Morty","imagenes" : ["https://res.cloudinary.com/nahuesantini/image/upload/v1705449865/Proyectos/RM_login_r9dxj2.jpg"], "video" : "https://www.youtube.com/watch?v=vE5zUr5URqY", "descripcion":"App que consume datos de una BDD y permite la visualización de la informacion de todos los personajes. Además cuenta con busqueda por ID, filtrado y ordenado y la posibilidad de que cada usuario, gracias a un registro e inicio de sesión autenticada contra la BDD, añada a sus favoritos"}
         
+    ],
+
+    "Certificados": [
+    
+        {"nombre":"Henry" , "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg"]},
+    
+        {"nombre": "ArgPrograma", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png", "https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png", "https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png"]},
+    
+        {"nombre": "CoderHouse", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png"]}
     ]
 
 

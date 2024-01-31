@@ -1,5 +1,8 @@
 import { useState } from "react";
 import style from "./Certificados.module.css";
+import Galeria from "../Galeria/Galeria";
+import datos from "../../utils/datos.json"
+
 const Certificados = () => {
   const [activo, setActivo] = useState({
     primero: true,
@@ -8,6 +11,8 @@ const Certificados = () => {
     cuarto: false,
     quinto: false,
   });
+
+  const certificados = datos.Certificados
 
   const handlerActivar = (e) => {
     const botonPresionado = e.target.value;
@@ -20,10 +25,25 @@ const Certificados = () => {
   };
 
   return (
-    <div className={style.container}>
-      <h1 className={style.titulo}><span className={style.barra}>|</span>Certificados</h1>
-      <main className={style.carousel}>
-        {activo.primero ? (
+    <div className={style.container} id="Certificados">
+      <div className={style.separador}></div>
+      <header className={style.header}>
+        <h1 className={style.titulo}><span className={style.barra}>|</span>Certificados</h1>
+      </header>
+
+      <main className={style.containerMain}>
+        {certificados.map((datos) => {
+          const { imagenes, nombre } = datos
+          return (
+            <div className={style.imgs}>
+              <section className={style.galeria}>
+                <Galeria imagenes={imagenes} />
+              </section>
+            </div>
+          )
+        })}
+      </main>
+      {/* {activo.primero ? (
           <div className={style.henry}></div>
         ) : (
           <div className={style.henryD}></div>
@@ -47,9 +67,8 @@ const Certificados = () => {
           <div className={style.coder}></div>
         ) : (
           <div className={style.coderD}></div>
-        )}
-      </main>
-      <section className={style.botonera}>
+        )} */}
+      {/* <section className={style.botonera}>
         <button
           onClick={handlerActivar}
           value="primero"
@@ -75,7 +94,7 @@ const Certificados = () => {
           value="quinto"
           className={style.boton}
         ></button>
-      </section>
+      </section> */}
     </div>
   );
 };
