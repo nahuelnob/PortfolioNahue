@@ -190,8 +190,9 @@
     top: 22vh;
     left: 22vh;
     width: 60vw;
-    height: 0.1vh;
-    background-color: #909090;
+    height: 0.3vh;
+    background-color: #429a82;
+    opacity: 30%;
     border: none;
     z-index: 1;
     filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
