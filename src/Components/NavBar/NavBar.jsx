@@ -1,43 +1,45 @@
 import Toggle from "../Toggle/Toggle";
 import style from "./Navbar.module.css";
+import { NavLink } from 'react-router-dom'
 const NavBar = () => {
+
+  const handleClick = (value, e) => {
+    e.preventDefault()
+    const proyectosSection = document.getElementById(value);
+    proyectosSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <nav className={style.container}>
-      <img
-        src="https://res.cloudinary.com/nahuesantini/image/upload/v1702420610/brand/isologoBlanco_lrs5ma.png"
-        alt=""
-        className={style.logo}
-      />
-      <hr
-        style={{
-          position: "absolute",
-          width: "6vh",
-          top: "12vh",
-          height: "0.2vh",
-          backgroundColor: "#811f1f",
-          border: "#811f1f",
-        }}
-      />
+      <header className={style.header}>
+        <img
+          src="https://res.cloudinary.com/nahuesantini/image/upload/v1702420610/brand/isologoBlanco_lrs5ma.png"
+          alt=""
+          className={style.logo}
+        />
+        <div className={style.separador} />
+      </header>
 
-      <div className={style.links}>
-        <div className={style.link}>
-          <a href="#About">
-            <i class="fa-solid fa-user"></i>
-          </a>
-        </div>
-        <div className={style.link}>
-          <a href="#Proyectos">
+      <main className={style.mainList}>
+        <a className={style.link} href="#About" onClick={(e) => handleClick('About', e)}>
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a className={style.link} href="#Proyectos" onClick={(e) => handleClick('Proyectos', e)}>
           <i class="fa-solid fa-briefcase"></i>
-          </a>
-        </div>
-        <div className={style.link}>
+        </a>
+        <a className={style.link}>
           <i class="fa-solid fa-address-card" />
-        </div>
-        <div className={style.toggle}>{/* <Toggle /> */}</div>
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-youtube"></i>
-      <i class="fa-brands fa-linkedin"></i>
-      </div>
+        </a>
+        <div className={style.separador} />
+      </main>
+      <footer className={style.footerList}>
+        <NavLink to="https://github.com/nahuelnob" target="_blank" className={style.navLink}>
+          <i class="fa-brands fa-github" />
+        </NavLink>
+        <NavLink to="https://www.linkedin.com/in/nahuesantini/" target="_blank" className={style.navLink}>
+          <i class="fa-brands fa-linkedin" />
+        </NavLink>
+      </footer>
     </nav>
   );
 };

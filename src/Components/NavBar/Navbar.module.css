@@ -1,46 +1,83 @@
 .container {
   top: 0;
-  width: 5%;
+  width: 5svw;
   height: 100vh;
   position: fixed;
   display: grid;
-  grid-template-rows: 13vh 87vh;
+  grid-template-rows: repeat(8, 1fr);
   grid-template-columns: 1fr;
   background-color: #202020;
-  justify-items: center;
   filter: drop-shadow(0px 1px 5px rgba(255, 255, 255, 0.247));
   z-index: 10;
+  overflow: hidden;
 }
 
-.logo {
+.header {
   position: relative;
-  height: 8vh;
-  align-self: start;
-  justify-self: center;
-  margin-top: 1rem;
+  width: 5svw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-row: span 2;
+  .logo {
+    position: relative;
+    height: 13svh;
+    opacity: 40%;
+  }
+}
+.separador {
+  position: absolute;
+  bottom: 2.1svh;
+  height: 0.2svh;
+  width: 3.5svw;
+  background-color: #429a82;
 }
 
-.links {
+.mainList {
+  position: relative;
   display: grid;
-  padding-top: 5vh;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-  row-gap: 5vh;
-  order: 0;
-  justify-self: center;
-  align-self: flex-start;
-  color: #cacaca;
+  grid-template-rows: repeat(10, 1fr);
+  width: 5svw;
+  flex-direction: column;
+  grid-row: span 5;
+  overflow: hidden;
+  place-items: center;
 }
 .link {
+  color: #909090;
   cursor: pointer;
   height: 1vh;
+  text-decoration: none;
 }
-.link:hover {
+.navLink, .link:focus {
+  color: #429a82;
+}
+.navLink, .link:active {
+  color: #429a82;
+}
+
+.navLink, .link:hover {
   transition: ease-in-out 0.5s;
-  transform: scale(1.1);
+  color: #429a82;
+  filter: brightness(95%);
+  opacity: 50%;
 }
-.linksDesp{
-  display: none;
+
+.footerList {
+  /* padding-top: 9.5svh; */
+  position: relative;
+  width: 5svw;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  place-items: center;
+  grid-row: span 2;
+}
+.navLink {
+  font-size: 3.5svh;
+  color: #909090;
+  text-decoration: none;
 }
 
 /* @media screen and (min-width: 426px) and (max-width: 767px) {
@@ -86,12 +123,12 @@
     transition: ease-in-out 0.5s;
     justify-items: center;
   } */
-  
-  /* .links{
+
+/* .links{
     display: none;
   } */
 
-  /* .linksDesp {
+/* .linksDesp {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
@@ -103,7 +140,7 @@
     color: #cacaca;
   } */
 
-  /* .logo {
+/* .logo {
     order: 1;
     margin-left: 0;
     justify-self: center;
