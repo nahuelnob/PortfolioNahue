@@ -118,7 +118,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   background-color: #202020;
-  border: solid 0.3svh #429a82;
+  border: solid 0.4svh #429a8396;
   border-left: none;
   /* border-radius: 0vh 1vh 1vh 0vh; */
   z-index: 0;
@@ -161,8 +161,13 @@
 
 .footer {
   position: absolute;
-  bottom: 2svh;
-  right: 1svw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 1svh;
+  right: 1.5svw;
+  font-size: 3.0svh;
   filter: drop-shadow(1px 0px 1px #101010);
 }
 .close {
@@ -190,8 +195,7 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0.5vh 0.1vh 1vh #101010e0);
-  /* border-radius: 1svh; */
+  filter: drop-shadow(0.5vh 0.1vh 1vh #101010e0) drop-shadow(-1vh 0vh 0.5vh #101010e0);
   overflow: hidden;
   transition: transform ease-in-out 0.8s;
 }
@@ -199,6 +203,11 @@
 .imgs:hover {
   transform: scale(1.005);
   transition: ease-in-out 0.5s;
+}
+
+.github{
+  text-decoration: none;
+  color: #909090;
 }
 
 /* ////////////////////////////////// */

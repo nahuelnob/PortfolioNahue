@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {NavLink} from 'react-router-dom'
 import style from "./Proyectos.module.css";
 import Galeria from "../Galeria/Galeria";
 import YouTube from "../YouTube/YouTube";
@@ -28,7 +29,7 @@ const Proyectos = () => {
 
       <main className={style.main}>
         {proyectos.map((datos) => {
-          const { side, nombre, imagenes, video, descripcion } = datos
+          const { github, nombre, imagenes, video, descripcion } = datos
           return (
             <section className={style.containerMain}>
               <div className={/* side === "left" ? */ style.imgs /* : style.imgsRigth */}>
@@ -44,7 +45,10 @@ const Proyectos = () => {
                 <p className={style.parrafo}>{descripcion}</p>
                 <h1 className={style.subtitulo}>{nombre}</h1>
                 <footer className={style.footer}>
-                  <i onClick={() => handler(nombre)} class="fa-brands fa-youtube" style={{ fontSize: "4vh", color: "#707070", cursor: "pointer" }}></i>
+                  <NavLink to={github} target="_blank" className={style.github}>
+                  <i class="fa-brands fa-github" style={{ cursor: "pointer", marginBottom: "1svh" }} />
+                  </NavLink>
+                  <i onClick={() => handler(nombre)} class="fa-brands fa-youtube" style={{ cursor: "pointer" }} />
                 </footer>
               </aside>
             </section>
