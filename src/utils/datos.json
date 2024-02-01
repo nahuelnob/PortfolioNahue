@@ -15,7 +15,11 @@
     
         {"nombre":"Henry" , "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg"]},
     
-        {"nombre": "ArgPrograma", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png", "https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png", "https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png"]},
+        {"nombre": "ArgProgramaT1", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png"]},
+        
+        {"nombre": "ArgProgramaT2", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1703027087/Portfolio/tramo_2_qmd4py.png"]},
+        
+        {"nombre": "ArgProgramaT3", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png"]},
     
         {"nombre": "CoderHouse", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png"]}
     ]
