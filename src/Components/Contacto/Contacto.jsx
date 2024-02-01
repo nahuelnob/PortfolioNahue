@@ -17,7 +17,7 @@ const Contacto = () => {
                     <input type="text" name="email" autoComplete="off" className={style.input} />
                     <label htmlFor="comments" className={style.label}>Comentario</label>
                     <textarea type="text" name="comments" autoComplete="off" className={style.textarea} />
-                    <input type="hidden" name="_next" value="http://localhost:5173" />
+                    <input type="hidden" name="_next" value="https://nahuelsantini.vercel.app/" />
                     <input type="hidden" name="_captcha" value="false" />
                     <button type="submit" className={style.boton}>Enviar</button>
                 </form>
