@@ -41,7 +41,6 @@
   overflow: hidden;
   border: none;
   outline: none;
-  /* background-color: #202020; */
   filter: grayscale(100%);
   cursor: pointer;
 }
