@@ -14,6 +14,8 @@
     "Certificados": [
     
         {"nombre":"Henry" , "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1702420093/Portfolio/HenryCertificado_ln4qib.jpg"]},
+
+        {"nombre":"HenryTA" , "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1706754430/Portfolio/Ta_dnbaur.jpg"]},
     
         {"nombre": "ArgProgramaT1", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1703027108/Portfolio/tramo_1_t61z0u.png"]},
         
