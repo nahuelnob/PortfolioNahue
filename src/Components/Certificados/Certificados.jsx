@@ -1,6 +1,6 @@
 import { useState } from "react";
 import style from "./Certificados.module.css";
-import Galeria from "../Galeria/Galeria";
+import ButtonGaleria from "../ButtonGaleria/ButtonGaleria";
 import datos from "../../utils/datos.json"
 
 const Certificados = () => {
@@ -12,7 +12,7 @@ const Certificados = () => {
     quinto: false,
   });
 
-  const certificados = datos.Certificados
+  const certificado = datos.Certificados
 
   const handlerActivar = (e) => {
     const botonPresionado = e.target.value;
@@ -32,16 +32,18 @@ const Certificados = () => {
       </header>
 
       <main className={style.containerMain}>
-        {certificados.map((datos) => {
+        {/* <ButtonGaleria certificado={certificado}/> */}
+        <ButtonGaleria/>
+        {/* {certificados.map((datos) => {
           const { imagenes, nombre } = datos
           return (
             <div className={style.imgs}>
               <section className={style.galeria}>
-                <Galeria imagenes={imagenes} />
+                <button><img src={imagenes[0]} alt="" /></button>
               </section>
             </div>
           )
-        })}
+        })} */}
       </main>
       {/* {activo.primero ? (
           <div className={style.henry}></div>
