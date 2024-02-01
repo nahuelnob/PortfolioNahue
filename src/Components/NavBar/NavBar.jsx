@@ -32,6 +32,9 @@ const NavBar = () => {
           <i class="fa-solid fa-briefcase"></i>
         </a>
         <a className={style.link} href="#Certificados" onClick={(e) => handleClick('Certificados', e)}>
+        <i class="fa-solid fa-certificate"/>
+        </a>
+        <a className={style.link} href="#Contacto" onClick={(e) => handleClick('Contacto', e)}>
           <i class="fa-solid fa-address-card" />
         </a>
         <div className={style.separador} />
@@ -42,6 +45,12 @@ const NavBar = () => {
         </NavLink>
         <NavLink to="https://www.linkedin.com/in/nahuesantini/" target="_blank" className={style.navLink}>
           <i class="fa-brands fa-linkedin" />
+        </NavLink>
+        <NavLink to="https://api.whatsapp.com/send?phone=5493413935457" target="_blank" className={style.navLink}>
+        <i class="fa-brands fa-whatsapp"/>
+        </NavLink>
+        <NavLink to="mailto:nahue.santini@gmail.com" target="_blank" className={style.navLink}>
+        <i class="fa-solid fa-envelope"/>
         </NavLink>
       </footer>
     </nav>
