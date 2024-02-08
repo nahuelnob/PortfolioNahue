@@ -24,7 +24,8 @@
         {"nombre": "ArgProgramaT3", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1703027088/Portfolio/tramo_3_lwgkzs.png"]},
     
         {"nombre": "CoderHouse", "imagenes": ["https://res.cloudinary.com/nahuesantini/image/upload/v1698707283/Portfolio/CoderHouse_zmnyhd.png"]}
-    ]
+    ],
+    "Skills" : ["https://img.icons8.com/color/240/javascript--v1.png", "https://img.icons8.com/color/240/css3.png", "https://img.icons8.com/color/240/html-5--v1.png", "https://img.icons8.com/color/240/python--v1.png","https://img.icons8.com/color/240/react-native.png", "https://img.icons8.com/color/240/redux.png", "https://img.icons8.com/color/240/nodejs.png", "https://img.icons8.com/color/240/tailwind_css.png", "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png", "https://res.cloudinary.com/nahuesantini/image/upload/v1702607522/Portfolio/sequelize_c60cud.png", "https://img.icons8.com/color/240/git.png", "https://img.icons8.com/fluency/240/github.png" ]
 
 
 
