@@ -1,293 +1,144 @@
 .container {
   width: 100%;
-  height: 100vh;
-  /* background-color: #202020; */
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  height: 100svh;
+  /* background-color: powderblue; */
+  position: relative;
+  overflow: hidden;
 }
 
-.main {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.column1 {
-  position: relative;
+.nahue {
+  position: absolute;
+  height: 99svh;
+  width: 50%;
+  top: 0;
+  right: 0;
   display: flex;
   align-items: start;
   justify-content: end;
-  order: 1;
-  z-index: 0;
+  z-index: 21;
   background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg");
   background-size: 155vh;
   background-position: top;
   border-image: fill;
-  .foto {
-    position: relative;
-    height: 120vh;
-    top: -13%;
-    left: -40%;
-  }
-  .persona {
-    position: absolute;
-    height: 90vh;
-    bottom: 0vh;
-    filter: grayscale(95%) drop-shadow(2px 2px 4px black);
-    z-index: 1;
-  }
-  .persona:hover {
-    filter: grayscale(5%) drop-shadow(2px 2px 4px black);
-  }
+  z-index: 1;
 }
-.column1::before {
+.nahue::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(-75deg, #20202000, #20202075, #202020, #202020);
 }
-.degrade{
+.persona {
+  position: absolute;
+  height: 99svh;
+  top: 0;
+  right: 0;
+  filter: grayscale(95%) drop-shadow(-1svw 0svw 1svw black);
+  z-index: 2;
+  transition: transform ease-in-out 2s, filter ease-in-out 2s;
+}
+.persona:hover {
+  transform: scale(1.03);
+  filter: grayscale(5%) drop-shadow(-1.5svw 0svw 2svw black);
+  transition: transform ease-in-out 2s, filter ease-in-out 2s;
+}
+/* .degrade{
   position:absolute;
   width: 40svw;
   height: 10svh;
-  bottom: 0;
   z-index: 2;
   background: linear-gradient(to bottom, transparent,#20202050, #202020a2, #202020dc, #202020, #202020);
-  /* background-color: #2d6959; */
+} */
+.header {
+  position: relative;
+  width: 80%;
+  height: 15svh;
+  top: 4svh;
+  left: 15svw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  z-index: 3;
 }
-.column2 {
-  padding-top: 1rem;
+
+.nombre {
+  margin: 0;
+  height: 13svh;
   display: flex;
   align-items: center;
-  justify-content: end;
+  width: fit-content;
+  /* top: -14vh; */
+  /* left: 25vh; */
+  font-size: 15svh;
+  -webkit-box-reflect: below -2svh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
+  background: linear-gradient(
+    to bottom,
+    #69fcd5,
+    #51bda0,
+    #429a82,
+    #429a82,
+    #2d6959,
+    #2d6959,
+    #2d6959
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  text-transform: uppercase;
+}
+.apellido {
   position: relative;
-  /* background: linear-gradient(
-    45deg,
-    #20202030,
-    #20202050,
-    #202020,
-    #202020,
-    #202020
-  ); */
-  /* background-color: #122923; */
-  background-color: #202020;
-  .puesto {
-    position: absolute;
-    left: 26vh;
-    height: 0vh;
-    top: 12vh;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    background-color: #505050;
-  }
-  .fs,
-  .ds {
-    font-size: 10vh;
-    text-transform: uppercase;
-    margin-bottom: -16vh;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-    display: inline-block;
-    color: transparent;
-    -webkit-text-stroke: 0.2vh #429a82;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+  margin: 0;
+  height: 13svh;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  -webkit-box-reflect: below -2svh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
+  /* top: -14vh; */
+  /* left: 85vh; */
+  font-size: 15svh;
+  z-index: 2;
+  filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  background: linear-gradient(to top, #5e5e5e, #696969, #afaeae, #d4d4d4);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
 
-  .dev {
-    margin-bottom: -25vh;
-    left: 27vw;
-  }
-  .jr {
-    left: 35vw;
-  }
-  .jr,
-  .dev {
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .container {
     position: relative;
-    top: -7vh;
-    white-space: nowrap;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-    z-index: 1;
-    font-size: 8vh;
-    display: inline-block;
-    color: transparent;
-    -webkit-text-stroke: 0.2vh #909090;
-    text-transform: lowercase;
+    right: 0svw;
+    width: 105%;
+    margin: 0;
+    background-color: red;
+    /* overflow: hidden; */
   }
-  .nombre {
-    position: absolute;
-    top: -14vh;
-    left: 25vh;
-    font-size: 15vh;
-    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
-    background: linear-gradient(
-      to bottom,
-      #69fcd5,
-      #51bda0,
-      #429a82,
-      #429a82,
-      #2d6959,
-      #2d6959,
-      #2d6959
-    );
-    -webkit-background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  .header {
+    left: 4svw;
+    top: 12svh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .apellido {
-    position: absolute;
-    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
-    top: -14vh;
-    left: 85vh;
-    font-size: 15vh;
-    z-index: 2;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-    background: linear-gradient(to top, #5e5e5e, #696969, #afaeae, #d4d4d4);
-    -webkit-background-clip: text;
-    color: transparent;
+  .nahue {
+    display: none;
   }
-  .article {
-    position: absolute;
-    top: 52vh;
-    left: 27vh;
+  .persona {
+    margin: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .container {
     width: 100%;
-    height: 35%;
-    text-align: justify;
-    font-size: 2.3vh;
-    color: whitesmoke;
-    margin-right: 15vh;
-    line-height: 3.5vh;
-    z-index: 1;
+    background-color: aqua;
+    /* overflow: hidden; */
   }
-  .skills {
-    position: absolute;
-    bottom: 5vh;
-    left: 27vh;
-    width: 50vw;
-    display: grid;
-    z-index: 1;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 4.3vh;
-  }
-
-  .skill {
-    align-self: center;
-    justify-self: center;
-    width: 6.5vh;
-    height: 6.5vh;
-    filter: grayscale(70%) drop-shadow(1px 1px 1px black);
-  }
-  .skill:hover {
-    filter: grayscale(0%) drop-shadow(1px 1px 1px black);
-  }
-
-  .hrVert {
-    position: absolute;
-    top: 22vh;
-    left: 22vh;
-    width: 60vw;
-    height: 0.3vh;
-    background-color: #429a82;
-    opacity: 30%;
-    border: none;
-    z-index: 1;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
-
-@media screen and (max-width: 1025px) {
-  .column2 {
-    .fs,
-    .ds {
-      font-size: 8vh;
-    }
-    .ds {
-      position: relative;
-      top: 3vh;
-    }
-    .jr {
-      position: relative;
-      top: -3.5vh;
-    }
-    .article {
-      position: relative;
-      top: 10vh;
-    }
-    .hrVert {
-      width: 70vw;
-      left: 14vw;
-    }
-    .skills {
-      left: 16vw;
-      column-gap: 1.6vh;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-    .persona {
-      position: absolute;
-      z-index: 1;
-    }
-  .column2 {
-    .nombre {
-      left: 10vw;
-      font-size: 12vh;
-      z-index: 1;
-    }
-    .apellido {
-      font-size: 12vh;
-      left: 48vw;
-    }
-    .puesto {
-      top: 7vh;
-      left: 15vh;
-    }
-    .fs,
-    .ds {
-      font-size: 8vh;
-      white-space: nowrap;
-    }
-    .ds {
-      top: 8vh;
-    }
-    .dev,
-    .jr {
-      font-size: 6vh;
-    }
-    .dev {
-      top: -2vh;
-      left: 36vw;
-    }
-    .jr {
-      top: 6vh;
-      left: 46vw;
-      z-index: -1;
-    }
-    .hrVert {
-      top: 15vh;
-    }
-    .article {
-      position: absolute;
-      top: 40vh;
-      left: 12.5vw;
-      width: 50vw;
-    }
-    .skills {
-      left: 12.5vw;
-      column-gap: 2.5vh;
-    }
-  }
-}
-
-/* @keyframes marquee {
-  from {
-    transform: translateX(0vw);
-  }
-  to {
-    transform: translateX(-50vw);
-  }
-} */
