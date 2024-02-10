@@ -6,13 +6,13 @@ import Proyectos from '../../Components/Proyectos/Proyectos'
 
 const Portfolio = () => {
     return (
-        <>
+        <div>
         <NavBar/>
         <About/>
         <Proyectos/>
         <Certificados/>
         <Contacto/>
-        </>
+        </div>
     )
 }
 
