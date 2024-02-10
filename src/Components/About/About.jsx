@@ -7,24 +7,26 @@ const About = () => {
         <h1 className={style.apellido}>Santini</h1>
       </header>
       <main className={style.main}>
-        <article className={style.puesto}>
+        {/* <article className={style.puesto}> */}
+        <section className={style.fullstack}>
           <h1 className={style.fs}>FullStack</h1>
           <h1 className={style.dev}>developer</h1>
+        </section>
+        <section className={style.data}>
           <h1 className={style.ds}>Data SCience</h1>
           <h1 className={style.jr}>Analyst jr.</h1>
-        </article>
+        </section>
 
+        {/* </article> */}
       </main>
 
       <section className={style.nahue}>
-        <div className={style.degrade}></div>
+        {/* <div className={style.degrade}></div> */}
       </section>
       <img
         className={style.persona}
-
         src="https://res.cloudinary.com/nahuesantini/image/upload/v1702605340/brand/nahue_fndepj.png"
-
-        alt=""
+        alt="nahue"
       />
     </div>
   );
