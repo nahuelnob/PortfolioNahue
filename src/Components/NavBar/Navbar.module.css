@@ -204,7 +204,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     place-items: center;
-    grid-column: span 3;
+    grid-column: span 5;
     margin-left: 10svw;
     padding-left: 2svh;
   }
@@ -274,7 +274,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     place-items: center;
-    grid-column: span 3;
+    grid-column: span 5;
     margin-left: 10svw;
     padding-left: 2svh;
   }
