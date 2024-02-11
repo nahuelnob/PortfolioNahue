@@ -195,7 +195,7 @@
     translate: 0 -15svh;
   }
   to {
-    translate: 0 -5svh;
+    translate: 0 -10svh;
   }
 }
 @media screen and (min-width: 565px) and (max-width: 768px) {
