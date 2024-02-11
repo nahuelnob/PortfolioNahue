@@ -170,9 +170,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 5svh;
+      height: 24svh;
       width: 4.5svh;
-      bottom: 1.5svh;
+      bottom: 0svh;
       right: -2svw;
       font-size: 7vh;
       filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
@@ -243,7 +243,7 @@
     }
     .S {
       justify-content: center;
-      height: 5svh;
+      height: 10svh;
       width: 4.5svh;
       bottom: 1.5svh;
       right: -2svw;
@@ -268,14 +268,13 @@
   }
   .footerList {
     border-left: solid 0.1svw #2d6959;
-    /* margin-top: 3svh; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     place-items: center;
     grid-column: span 5;
-    margin-left: 10svw;
-    padding-left: 2svh;
+    margin-left: 13svw;
+    padding-left: 1svh;
   }
 }
