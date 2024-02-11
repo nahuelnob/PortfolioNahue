@@ -1,33 +1,6 @@
 .container {
   width: 100%;
-  /* background: linear-gradient(
-    -145deg,
-    #20202030,
-    #20202050,
-    #122923,
-    #122923,
-    #122923,
-    #122923,
-    #122923
-  ); */
-  /* background: linear-gradient(
-    145deg,
-    #20202030,
-    #20202050,
-    #202020,
-    #202020,
-    #202020,
-    #202020,
-    #202020,
-    #202020,
-    #202020,
-    #202020,
-    #202020,
-    #202020,
-    #202020
-  ); */
   background-color: #202020;
-  /* background-color: #202b28; */
   display: grid;
   grid-template-rows: repeat(9, 1fr);
   position: relative;
@@ -40,10 +13,8 @@
   left: 25vh;
   top: -0.3svh;
   background-color: #429a82;
-  /* border-radius: 0.2vh; */
   opacity: 30%;
   filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-
 }
 .header {
   position: relative;
@@ -125,7 +96,7 @@
   animation: opernDescription linear both;
   animation-timeline: view();
   animation-range: entry 20% cover 50%;
-  
+
   .parrafo {
     position: relative;
     display: flex;
@@ -167,7 +138,7 @@
   justify-content: center;
   bottom: 1svh;
   right: 1.5svw;
-  font-size: 3.0svh;
+  font-size: 3svh;
   filter: drop-shadow(1px 0px 1px #101010);
 }
 .close {
@@ -195,7 +166,8 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0.5vh 0.1vh 1vh #101010e0) drop-shadow(-1vh 0vh 0.5vh #101010e0);
+  filter: drop-shadow(0.5vh 0.1vh 1vh #101010e0)
+    drop-shadow(-1vh 0vh 0.5vh #101010e0);
   overflow: hidden;
   transition: transform ease-in-out 0.8s;
 }
@@ -205,18 +177,64 @@
   transition: ease-in-out 0.5s;
 }
 
-.github{
+.github {
   text-decoration: none;
   color: #909090;
 }
 
-
-
 @keyframes opernDescription {
   from {
-    translate: -9svw 0svw;
+    translate: -9svw 0;
   }
   to {
     translate: 0 0;
+  }
+}
+@keyframes opernDescriptionResp {
+  from {
+    translate: 0 -15svh;
+  }
+  to {
+    translate: 0 -5svh;
+  }
+}
+@media screen and (min-width: 565px) and (max-width: 768px) {
+}
+@media screen and (min-width: 500px) and (max-width: 564px) {
+}
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .container {
+    /* top: 20svh; */
+    padding-bottom: 0svh;
+  }
+  .separador {
+    left: 10svw;
+  }
+  .titulo {
+    top: 5svh;
+    left: 4svw;
+  }
+  .containerMain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    width: 90%;
+    height: 100svh;
+    left: 0;
+    top: -30svh;
+    .imgs {
+      grid-column: span 4;
+      grid-row: span 1;
+    }
+    .aside {
+      grid-column: span 4;
+      grid-row: span 1;
+      animation: opernDescriptionResp linear both;
+      animation-timeline: view();
+      animation-range: entry 20% cover 50%;
+      border: solid 0.4svh #429a8396;
+      border-top: none;
+    }
   }
 }

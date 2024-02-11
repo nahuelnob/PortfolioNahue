@@ -32,7 +32,7 @@ const Proyectos = () => {
           const { github, nombre, imagenes, video, descripcion } = datos
           return (
             <section className={style.containerMain}>
-              <div className={/* side === "left" ? */ style.imgs /* : style.imgsRigth */}>
+              <div className={style.imgs}>
                 <section style={{ display: `${youTube[`${nombre}`] ? "flex" : "none"}` }} className={style.youtube} >
                   <YouTube videoUrl={video} />
                   <button style={{ display: `${youTube[`${nombre}`] ? "flex" : "none"}` }} className={style.close} onClick={() => handler()}><i class="fa-solid fa-rectangle-xmark" /></button>
@@ -41,7 +41,7 @@ const Proyectos = () => {
                   <Galeria imagenes={imagenes} />
                 </section>
               </div>
-              <aside className={/* side === "left" ? */ style.aside /* : style.asideRigth */}>
+              <aside className={style.aside}>
                 <p className={style.parrafo}>{descripcion}</p>
                 <h1 className={style.subtitulo}>{nombre}</h1>
                 <footer className={style.footer}>
