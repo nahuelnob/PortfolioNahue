@@ -203,6 +203,7 @@
   .titulo {
     top: 5svh;
     left: 4svw;
+    font-size: 7svh;
   }
   .containerMain {
     display: grid;
