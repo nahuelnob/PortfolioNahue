@@ -17,7 +17,22 @@ const About = () => {
           <h1 className={style.jr}>Analyst jr.</h1>
         </section>
 
-        {/* </article> */}
+        <article className={style.article}>
+          <p>
+            ¡Hola! Soy Nahuel Santini, desarrollador fullstack y analista de
+            data science jr.
+          </p>
+
+          <p>
+            Mi experiencia abarca desde ventas,
+            hasta Economía, pasando en el medio por Diseño Gráfico. Estas habilidades versátiles me permiten adaptarme a una amplia gama de proyectos.
+          </p>
+          <p>
+            {" "}
+            ¡A continuación te muestro algunos de mis
+            trabajos!
+          </p>
+        </article>
       </main>
 
       <section className={style.nahue}>

@@ -1,0 +1,230 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  background-color: #909090;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  left: 15%;
+  background-color: #505050;
+}
+
+.header{
+  position: relative;
+  top: 4svh;
+  height: 15svh;
+  display: flex;
+  background-color: #2d6959;
+  align-items: center;
+  justify-content: start;
+  .nombre {
+    position: relative;
+    /* top: -14vh; */
+    /* left: 25vh; */
+    font-size: 15svh;
+    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
+    background: linear-gradient(
+      to bottom,
+      #69fcd5,
+      #51bda0,
+      #429a82,
+      #429a82,
+      #2d6959,
+      #2d6959,
+      #2d6959
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  }
+  .apellido {
+    position: relative;
+    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
+    /* top: -14vh; */
+    /* left: 85vh; */
+    font-size: 15svh;
+    z-index: 2;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+    background: linear-gradient(to top, #5e5e5e, #696969, #afaeae, #d4d4d4);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+/* .column1 {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  order: 1;
+  z-index: 0;
+  background-image: url("https://res.cloudinary.com/nahuesantini/image/upload/v1698707247/Portfolio/NahueParque_kitgwp.jpg");
+  background-size: 155vh;
+  background-position: top;
+  border-image: fill;
+  .foto {
+    position: relative;
+    height: 120vh;
+    top: -13%;
+    left: -40%;
+  }
+  .persona {
+    position: absolute;
+    height: 90vh;
+    bottom: 0vh;
+    filter: grayscale(95%) drop-shadow(2px 2px 4px black);
+    z-index: 1;
+  }
+  .persona:hover {
+    filter: grayscale(5%) drop-shadow(2px 2px 4px black);
+  }
+}
+.column1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-75deg, #20202000, #20202075, #202020, #202020);
+}
+.degrade{
+  position:absolute;
+  width: 40svw;
+  height: 10svh;
+  bottom: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, transparent,#20202050, #202020a2, #202020dc, #202020, #202020);
+} */
+.column2 {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  background-color: #909090;
+  /* background-color: #202020; */
+  .puesto {
+    position: absolute;
+    left: 26vh;
+    height: 0vh;
+    top: 12vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #505050;
+  }
+  .fs,
+  .ds {
+    font-size: 10vh;
+    text-transform: uppercase;
+    margin-bottom: -16vh;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.2vh #429a82;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .dev {
+    margin-bottom: -25vh;
+    left: 27vw;
+  }
+  .jr {
+    left: 35vw;
+  }
+  .jr,
+  .dev {
+    position: relative;
+    top: -7vh;
+    white-space: nowrap;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+    z-index: 1;
+    font-size: 8vh;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.2vh #909090;
+    text-transform: lowercase;
+  }
+  
+  .article {
+    position: absolute;
+    top: 52vh;
+    left: 27vh;
+    width: 100%;
+    height: 35%;
+    text-align: justify;
+    font-size: 2.3vh;
+    color: whitesmoke;
+    margin-right: 15vh;
+    line-height: 3.5vh;
+    z-index: 1;
+  }
+  .skills {
+    position: absolute;
+    bottom: 5vh;
+    left: 27vh;
+    width: 50vw;
+    display: grid;
+    z-index: 1;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 4.3vh;
+  }
+
+  .skill {
+    align-self: center;
+    justify-self: center;
+    width: 6.5vh;
+    height: 6.5vh;
+    filter: grayscale(70%) drop-shadow(1px 1px 1px black);
+  }
+  .skill:hover {
+    filter: grayscale(0%) drop-shadow(1px 1px 1px black);
+  }
+
+  .hrVert {
+    position: absolute;
+    top: 22vh;
+    left: 22vh;
+    width: 60vw;
+    height: 0.3vh;
+    background-color: #429a82;
+    opacity: 30%;
+    border: none;
+    z-index: 1;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  }
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .container{
+    width: 100%;
+    background-color: aqua;
+  }
+  .main{
+    background-color: #429a82;
+  }
+  .header{
+    left: 15%;
+    background-color: #505050;
+  }
+  
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .container{
+    width: 100svw;
+    background-color: aqua;
+  }
+  .main{
+    background-color: red;
+  }
+  
+}

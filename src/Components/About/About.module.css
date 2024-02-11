@@ -60,7 +60,7 @@
 /* //////////////////////////////////////////////////////// */
 .header {
   position: relative;
-  width: 70%;
+  width: 75%;
   height: 15svh;
   top: 4svh;
   left: 15svw;
@@ -126,44 +126,44 @@
     flex-wrap: wrap;
     align-items: start;
   }
-}
-.fs,
-.ds {
-  margin: 0;
-  height: 10svh;
-  font-size: 10svh;
-  position: relative;
-  text-transform: uppercase;
-  filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-  display: inline-block;
-  color: transparent;
-  -webkit-text-stroke: 0.2vh #429a82;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.dev {
-  /* margin-bottom: -25vh; */
-  /* left: 27vw; */
-}
-.jr {
-  /* left: 35vw; */
-}
-.jr,
-.dev {
-  top: 2.5svh;
-  left: 1svw;
-  height: fit-content;
-  margin: 0;
-  position: relative;
-  white-space: nowrap;
-  filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-  z-index: 1;
-  font-size: 8vh;
-  display: inline-block;
-  color: transparent;
-  -webkit-text-stroke: 0.2vh #909090;
-  text-transform: lowercase;
+  .fs,
+  .ds {
+    margin: 0;
+    height: 10svh;
+    font-size: 10svh;
+    position: relative;
+    text-transform: uppercase;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.2vh #429a82;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .jr,
+  .dev {
+    top: 2.5svh;
+    left: 1svw;
+    height: fit-content;
+    margin: 0;
+    position: relative;
+    white-space: nowrap;
+    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+    z-index: 1;
+    font-size: 8vh;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.2vh #909090;
+    text-transform: lowercase;
+  }
+  .article{
+    position: relative;
+    top: 3svh;
+    width: 80%;
+    color: #909090;
+    font-weight: 400;
+    font-size: 2.2svh;
+  }
 }
 
 @media screen and (min-width: 565px) and (max-width: 768px) {
@@ -198,6 +198,9 @@
     .ds,.jr{
       white-space: nowrap;
       top: -6svh;
+    }
+    .article{
+      display: none;
     }
   }
 }
@@ -234,6 +237,9 @@
     .ds,.jr{
       white-space: nowrap;
       top: -6svh;
+    }
+    .article{
+      display: none;
     }
   }
 }
