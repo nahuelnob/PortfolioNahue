@@ -109,7 +109,6 @@
   }
 }
 /* //////////////////////////////////////////////////////// */
-
 .main {
   position: relative;
   display: flex;
@@ -158,12 +157,36 @@
   }
   .article{
     position: relative;
-    top: 3svh;
+    top: 5svh;
     width: 80%;
     color: #909090;
     font-weight: 400;
     font-size: 2.2svh;
   }
+  p{
+    margin: 0.5svh
+  };
+}
+/* //////////////////////////////////////////////////////// */
+.footer{
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  top: 33svh;
+  left: 14svw;
+  z-index: 2;
+}
+.skill{
+  filter: grayscale(100%) drop-shadow(0.5svh 0.5svh 0.5svh #101010);
+  width: 7svh;
+  height: 7svh;
+  margin: 1.5svh;
+  cursor: pointer;
+}
+.skill:hover{
+  filter:grayscale(20%) drop-shadow(1svh 1svh 0.5svh #101010);
+  transition: filter ease 0.5s;
 }
 
 @media screen and (min-width: 565px) and (max-width: 768px) {
@@ -203,12 +226,15 @@
       display: none;
     }
   }
+  .footer{
+    top: 20svh;
+    left: 3svw;
+  }
 }
 @media screen and (min-width: 500px) and (max-width: 564px) {
   .header {
     left: 4svw;
     top: 12svh;
-    /* background-color: #2d6959; */
   }
   .nahue {
     display: none;
@@ -242,6 +268,11 @@
       display: none;
     }
   }
+  .footer{
+    width: 70%;
+    left: 2svw;
+    top: 20svh;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 499px) {
   .header {
@@ -249,11 +280,11 @@
     left: 4svw;
     .nombre,
     .apellido {
-      /* font-size: 10svh; */
+      font-size: 12svh;
       -webkit-box-reflect: below -6svh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
     }
     .apellido {
-      /* top: -3svh; */
+      top: -3svh;
     }
   }
   .persona {
@@ -266,21 +297,38 @@
     left: 4svw;
     top: 25svh;
 
+    .fs, .ds{
+      font-size: 7svh;
+    }
     .dev{
-      top: -1svh;
+      font-size: 5svh;
+      top: -3svh;
       left: 0;
     }
-    .fs, .ds{
-      font-size: 9svh;
-    }
     .jr{
-      top: -6svh;
+      font-size: 5svh;
+      top: -9svh;
       left: 0;
 
     }
     .ds{
       white-space: nowrap;
-      top: -4svh;
+      top: -6svh;
+    }
+    .article{
+      display: none;
+    }
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    top: 30svh;
+    width: 90%;
+    left: 3svw;
+    .skill{
+      margin: 0.7svh;
     }
   }
  

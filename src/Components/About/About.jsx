@@ -1,5 +1,8 @@
 import style from "./About.module.css";
+import datos from "../../utils/datos.json"
+
 const About = () => {
+  const skills = datos.Skills
   return (
     <div className={style.container} id="About">
       <header className={style.header}>
@@ -34,6 +37,15 @@ const About = () => {
           </p>
         </article>
       </main>
+      <footer className={style.footer}>
+        {/* <section> */}
+          {skills.map((skill) => {
+            return <>
+            <img className={style.skill} src={skill} alt="" />
+            </>
+          })}
+        {/* </section> */}
+      </footer>
 
       <section className={style.nahue}>
         {/* <div className={style.degrade}></div> */}
