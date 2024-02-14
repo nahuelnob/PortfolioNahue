@@ -10,8 +10,8 @@ const Portfolio = () => {
         <NavBar/>
         <About/>
         <Proyectos/>
-        {/* <Certificados/> */}
-        {/* <Contacto/> */}
+        <Certificados/>
+        <Contacto/>
         </div>
     )
 }
