@@ -86,21 +86,21 @@
   animation: opernDescription linear both;
   animation-timeline: view();
   animation-range: entry 20% cover 50%;
+  overflow: hidden;
 
   .parrafo {
+    margin: 3svh;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     font-size: 2svh;
     line-height: 4vh;
-    top: -2svh;
     width: 85%;
     height: 100%;
-    padding-left: 3vh;
     color: whitesmoke;
     grid-column: span 6;
-    overflow: hidden;
+    overflow: auto;
   }
   .subtitulo {
     position: relative;
@@ -116,7 +116,7 @@
     text-orientation: mixed;
     white-space: nowrap;
     background-color: #252525;
-    color: #909090;
+    color: #429a82;
   }
 }
 
@@ -130,6 +130,7 @@
   right: 1.5svw;
   font-size: 3svh;
   filter: drop-shadow(1px 0px 1px #101010);
+  
 }
 .close {
   position: absolute;
@@ -189,8 +190,162 @@
   }
 }
 @media screen and (min-width: 565px) and (max-width: 768px) {
+  .container {
+    /* top: 20svh; */
+    padding-bottom: 0svh;
+  }
+  .separador {
+    left: 10svw;
+  }
+  .titulo {
+    top: 5svh;
+    left: 4svw;
+    font-size: 7svh;
+  }
+  .containerMain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    width: 90%;
+    height: 80svh;
+    left: 0;
+    top: -15svh;
+    .imgs {
+      grid-column: span 4;
+      grid-row: span 1;
+      height: 60svh;
+    }
+    .aside {
+      position: relative;
+      top: -10svh;
+      height: 40svh;
+      grid-column: span 4;
+      grid-row: span 1;
+      animation: opernDescriptionResp linear both;
+      animation-timeline: view();
+      animation-range: entry 20% cover 50%;
+      border: solid 0.4svh #429a8396;
+      border-top: none;
+      .subtitulo {
+        position: absolute;
+        left: 0;
+        top: 28svh;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4vh;
+        overflow: hidden;
+        writing-mode: horizontal-tb;
+        white-space: nowrap;
+        color: #429a82;
+      }
+      .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        font-size: 3.5svh;
+        right: 1svw;
+        bottom: 1svh;
+      }
+      .parrafo{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .galeria {
+    height: 90%;
+  }
+  .github {
+    margin-right: 1svh;
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 500px) and (max-width: 564px) {
+  .container {
+    /* top: 20svh; */
+    padding-bottom: 0svh;
+  }
+  .separador {
+    left: 10svw;
+  }
+  .titulo {
+    top: 5svh;
+    left: 4svw;
+    font-size: 7svh;
+  }
+  .containerMain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    width: 90%;
+    height: 60svh;
+    left: 0;
+    top: -10svh;
+    .imgs {
+      grid-column: span 4;
+      grid-row: span 1;
+      /* height: 50%; */
+    }
+    .aside {
+      top: -30svh;
+      height: 40svh;
+      grid-column: span 4;
+      grid-row: span 1;
+      animation: opernDescriptionResp linear both;
+      animation-timeline: view();
+      animation-range: entry 20% cover 50%;
+      border: solid 0.4svh #429a8396;
+      border-top: none;
+    }
+    .subtitulo {
+      position: absolute;
+      left: 0;
+      top: 28svh;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4vh;
+      overflow: hidden;
+      writing-mode: horizontal-tb;
+      white-space: nowrap;
+      color: #429a82;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      font-size: 3.5svh;
+      right: 1svw;
+      bottom: 1svh;
+    }
+    .parrafo{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5svh;
+    right: 1svw;
+    bottom: 0svh;
+  }
+  .galeria {
+    height: 60%;
+  }
+  .github {
+    margin-right: 1svh;
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 499px) {
   .container {
@@ -221,7 +376,7 @@
     }
     .aside {
       top: -30svh;
-      height: 100%;
+      height: 40svh;
       grid-column: span 4;
       grid-row: span 1;
       animation: opernDescriptionResp linear both;
@@ -230,20 +385,47 @@
       border: solid 0.4svh #429a8396;
       border-top: none;
     }
+    .subtitulo {
+      position: absolute;
+      left: 0;
+      top: 28svh;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4vh;
+      overflow: hidden;
+      writing-mode: horizontal-tb;
+      white-space: nowrap;
+      color: #429a82;
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      font-size: 3.5svh;
+      right: 1svw;
+      bottom: 1svh;
+    }
+    .parrafo{
+      display: flex;
+      /* align-items: center; */
+    }
   }
-  .footer{
+  .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     font-size: 2.5svh;
-    right:1svw;
+    right: 1svw;
     bottom: 0svh;
   }
-  .galeria{
+  .galeria {
     height: 50%;
   }
-  .github{
+  .github {
     margin-right: 1svh;
     margin-bottom: 0;
   }
