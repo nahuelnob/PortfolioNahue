@@ -5,6 +5,7 @@
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   position: relative;
+
 }
 .separador {
   position: absolute;
