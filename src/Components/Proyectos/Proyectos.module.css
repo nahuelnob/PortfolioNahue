@@ -47,6 +47,7 @@
   position: relative;
   width: 100%;
   color: #909090;
+  height: fit-content;
 }
 
 .containerMain {
@@ -349,8 +350,8 @@
 }
 @media screen and (min-width: 320px) and (max-width: 499px) {
   .container {
-    /* top: 20svh; */
-    padding-bottom: 0svh;
+    padding: 0;
+    /* overflow: hidden; */
   }
   .separador {
     left: 10svw;
@@ -412,15 +413,6 @@
       display: flex;
       /* align-items: center; */
     }
-  }
-  .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5svh;
-    right: 1svw;
-    bottom: 0svh;
   }
   .galeria {
     height: 50%;
