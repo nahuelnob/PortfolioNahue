@@ -1,84 +1,49 @@
-import Toggle from "../Toggle/Toggle";
+import { useState, useEffect } from "react";
 import style from "./Navbar.module.css";
-import { NavLink } from 'react-router-dom'
-const NavBar = () => {
 
-  const handleClick = (value, e) => {
-    e.preventDefault()
-    const proyectosSection = document.getElementById(value);
-    proyectosSection.scrollIntoView({ behavior: 'smooth' });
-  }
+const NavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <nav className={style.container}>
-      <header className={style.header}>
-        <section className={style.logotipo}>
-          <h1 className={style.N}>N<h1 className={style.S}>S</h1></h1>
-          
-        </section>
-        <div className={style.separador} />
-      </header>
+    <nav className={`${style.nav} ${scrolled ? style.scrolled : ""}`}>
+      <div className={style.container}>
+        <div className={style.logo} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <span className={style.logoText}>NS</span>
+        </div>
+        
+        <div className={style.links}>
+          <button onClick={() => scrollToSection("About")} className={style.link}>Sobre mí</button>
+          <button onClick={() => scrollToSection("Proyectos")} className={style.link}>Proyectos</button>
+          <button onClick={() => scrollToSection("Certificados")} className={style.link}>Certificados</button>
+          <button onClick={() => scrollToSection("Contacto")} className={style.link}>Contacto</button>
+        </div>
 
-      <main className={style.mainList}>
-        <a className={style.link} href="#About" onClick={(e) => handleClick('About', e)}>
-          <i class="fa-solid fa-user"></i>
-        </a>
-        <a className={style.link} href="#Proyectos" onClick={(e) => handleClick('Proyectos', e)}>
-          <i class="fa-solid fa-briefcase"></i>
-        </a>
-        <a className={style.link} href="#Certificados" onClick={(e) => handleClick('Certificados', e)}>
-        <i class="fa-solid fa-certificate"/>
-        </a>
-        <a className={style.link} href="#Contacto" onClick={(e) => handleClick('Contacto', e)}>
-          <i class="fa-solid fa-address-card" />
-        </a>
-        <div className={style.separador} />
-      </main>
-      <footer className={style.footerList}>
-        <NavLink to="https://github.com/nahuelnob" target="_blank" className={style.navLink}>
-          <i class="fa-brands fa-github" />
-        </NavLink>
-        <NavLink to="https://www.linkedin.com/in/nahuesantini/" target="_blank" className={style.navLink}>
-          <i class="fa-brands fa-linkedin" />
-        </NavLink>
-        <NavLink to="https://api.whatsapp.com/send?phone=5493413935457" target="_blank" className={style.navLink}>
-        <i class="fa-brands fa-whatsapp"/>
-        </NavLink>
-        <NavLink to="mailto:nahue.santini@gmail.com" target="_blank" className={style.navLink}>
-        <i class="fa-solid fa-envelope"/>
-        </NavLink>
-      </footer>
+        <div className={style.socials}>
+          <a href="https://github.com/nahuesantini" target="_blank" rel="noreferrer" className={style.socialIcon}>
+            <i className="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nahuel-santini/" target="_blank" rel="noreferrer" className={style.socialIcon}>
+            <i className="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
     </nav>
   );
 };
 
 export default NavBar;
-
-{
-  /* <nav className={style.container}>
-<img
-  src="https://res.cloudinary.com/nahuesantini/image/upload/v1702420610/brand/isologoBlanco_lrs5ma.png"
-  alt=""
-  className={style.logo}
-  />
-
-  <div className={style.links}>
-  <div className={style.link}>
-    <p>Sobre Mi</p>
-    </div>
-    <div className={style.link}>
-    <p>Proyectos</p>
-  </div>
-  <div className={style.link}>
-  <p>Contacto</p>
-  </div>
-  <div className={style.toggle}><Toggle/></div>
-  </div>
-  
-  <div className={style.linksDesp}>
-  <i class="fa-solid fa-user"></i>
-  <i class="fa-solid fa-briefcase"></i>
-  <i class="fa-solid fa-address-card" />
-</div> 
-</nav>*/
-}
