@@ -1,280 +1,110 @@
-.container {
+.nav {
   position: fixed;
   top: 0;
-  width: 75px;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: 1fr;
-  justify-items: center;
-  background-color: #202020;
-  filter: drop-shadow(0px 1px 5px rgba(255, 255, 255, 0.247));
-  z-index: 10;
-  overflow: hidden;
-}
-
-.header {
-  position: relative;
-  width: 5svw;
-  height: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10000;
+  transition: all 0.3s ease;
+  padding: 0 4rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: start;
-  grid-row: span 3;
-
-  .N {
-    position: relative;
-    display: flex;
-    font-size: 12svh;
-    top: -12svh;
-    left: -0.5svh;
-    -webkit-box-reflect: below -12vh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
-    background: linear-gradient(
-      to bottom,
-      #69fcd5,
-      #51bda0,
-      #429a82,
-      #429a82,
-      #2d6959,
-      #2d6959,
-      #2d6959
-    );
-    -webkit-background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-    -webkit-box-reflect: below -10svh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
-  }
-  .S {
-    position: absolute;
-    top: -5.8svh;
-    right: -0.5svw;
-    font-size: 9vh;
-    filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-    background: linear-gradient(to top, #5e5e5e, #696969, #afaeae, #d4d4d4);
-    -webkit-background-clip: text;
-    color: transparent;
-    z-index: 1;
-    -webkit-box-reflect: below -6svh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
-  }
-}
-.separador {
-  position: absolute;
-  bottom: 2.5svh;
-  height: 0.2svh;
-  width: 3.5svw;
-  background-color: #429a82;
-  opacity: 30%;
-  filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.mainList {
-  position: relative;
-  display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  width: 5svw;
-  flex-direction: column;
-  grid-row: span 6;
-  overflow: hidden;
-  place-items: center;
-  /* padding-top: 5svh; */
+.scrolled {
+  height: 70px;
+  background: rgba(5, 5, 5, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-.link {
-  color: #909090;
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
   cursor: pointer;
-  /* height: 1vh; */
-  font-size: 2.8svh;
-  text-decoration: none;
-}
-.navLink,
-.link:focus {
-  color: #429a82;
-}
-.navLink,
-.link:active {
-  color: #429a82;
+  display: flex;
+  align-items: center;
 }
 
-.navLink,
-.link:hover {
-  transition: ease-in-out 0.5s;
-  color: #429a82;
-  filter: brightness(95%);
-  opacity: 50%;
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
 }
 
-.footerList {
-  /* padding-top: 9.5svh; */
+.links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.link {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.3s ease;
   position: relative;
-  width: 5svw;
-  display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  place-items: center;
-  grid-row: span 2;
-}
-.navLink {
-  font-size: 3.5svh;
-  color: #909090;
-  text-decoration: none;
+  padding: 0.5rem 0;
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .container {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10svh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
-  }
-  .header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    grid-column: span 1;
-    margin-left: 3svw;
-    .N {
-      position: relative;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      font-size: 10svh;
-      height: 10svh;
-      top: 0;
-      background: linear-gradient(
-        to bottom,
-        #69fcd5,
-        #51bda0,
-        #429a82,
-        #429a82,
-        #2d6959,
-        #2d6959,
-        #2d6959
-      );
-      -webkit-background-clip: text;
-      color: transparent;
-      filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-      -webkit-box-reflect: below -10svh linear-gradient(to bottom, transparent, transparent, transparent, rgba(0, 0, 0, 0.1), transparent);
-    }
-    .S {
-      position: absolute;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 24svh;
-      width: 4.5svh;
-      bottom: 0svh;
-      right: -2svw;
-      font-size: 7vh;
-      filter: drop-shadow(0.5vh 0.5vh 0.5vh black);
-      background: linear-gradient(to top, #5e5e5e, #696969, #afaeae, #d4d4d4);
-      -webkit-background-clip: text;
-      color: transparent;
-      z-index: 1;
-    }
-  }
-  .mainList {
-    padding-top: 6svh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 5svh;
-    width: 100%;
-    grid-column: span 6;
-    overflow: hidden;
-    height: 100%;
-    margin-left: 10svw;
-  }
-  .separador {
-    display: none;
-  }
-  .footerList {
-    border-left: solid 0.1svw #2d6959;
-    /* margin-top: 3svh; */
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    place-items: center;
-    grid-column: span 5;
-    margin-left: 10svw;
-    padding-left: 2svh;
-  }
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  transition: width 0.3s ease;
 }
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .container {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10svh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialIcon {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 1.5rem;
+    height: 60px;
   }
-  .header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    grid-column: span 1;
-    margin-left: 3svw;
-    .N {
-      position: relative;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      font-size: 10svh;
-      height: 10svh;
-      top: 0;
-    }
-    .S {
-      justify-content: center;
-      height: 10svh;
-      width: 4.5svh;
-      bottom: 1.5svh;
-      right: -2svw;
-      font-size: 7vh;
-      color: transparent;
-      z-index: 1;
-    }
-  }
-  .mainList {
-    padding-top: 6svh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 5svh;
-    width: 100%;
-    grid-column: span 6;
-    overflow: hidden;
-    height: 100%;
-    margin-left: 10svw;
-  }
-  .separador {
-    display: none;
-  }
-  .footerList {
-    border-left: solid 0.1svw #2d6959;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    place-items: center;
-    grid-column: span 5;
-    margin-left: 13svw;
-    padding-left: 1svh;
+  
+  .links {
+    display: none; /* In a real app we'd add a burger menu, but keeping it simple for now as per "minimalist" */
   }
 }

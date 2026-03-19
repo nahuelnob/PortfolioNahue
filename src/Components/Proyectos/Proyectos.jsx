@@ -1,58 +1,67 @@
 import { useState } from "react";
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 import style from "./Proyectos.module.css";
 import Galeria from "../Galeria/Galeria";
 import YouTube from "../YouTube/YouTube";
-import datos from "../../utils/datos.json"
+import datos from "../../utils/datos.json";
 
 const Proyectos = () => {
-  const [youTube, setYoutube] = useState({
-    "Rick & Morty": false,
-    "Countries": false,
-    "Codecrafted Templates": false,
-    "Padi": false,
-  })
+  const [activeVideo, setActiveVideo] = useState(null);
 
-  const handler = (nombre) => {
-    setYoutube({ [nombre]: true })
-  }
+  const handleOpenVideo = (nombre) => {
+    setActiveVideo(nombre);
+  };
 
-  const proyectos = datos.Proyectos
-  ////////////////////////////////////////////////////
+  const handleCloseVideo = () => {
+    setActiveVideo(null);
+  };
+
+  const proyectos = datos.Proyectos;
+
   return (
     <div className={style.container} id="Proyectos">
-      <div className={style.separador}></div>
       <header className={style.header}>
-        <h1 className={style.titulo}><span className={style.barra}>|</span>Proyectos</h1>
+        <h2 className={style.titulo}>Proyectos <span className={style.destacado}>Seleccionados</span></h2>
+        <p className={style.subtitulo}>Una muestra de mi trabajo reciente en desarrollo y análisis.</p>
       </header>
 
+      <main className={style.grid}>
+        {proyectos.map((proyecto) => {
+          const { github, nombre, imagenes, video, descripcion } = proyecto;
+          const isVideoOpen = activeVideo === nombre;
 
-      <main className={style.main}>
-        {proyectos.map((datos) => {
-          const { github, nombre, imagenes, video, descripcion } = datos
           return (
-            <section className={style.containerMain}>
-              <div className={style.imgs}>
-                <section style={{ display: `${youTube[`${nombre}`] ? "flex" : "none"}` }} className={style.youtube} >
-                  <YouTube videoUrl={video} />
-                  <button style={{ display: `${youTube[`${nombre}`] ? "flex" : "none"}` }} className={style.close} onClick={() => handler()}><i class="fa-solid fa-rectangle-xmark" /></button>
-                </section>
-                <section className={style.galeria}>
+            <article key={nombre} className={style.card}>
+              <div className={style.imageWrapper}>
+                {isVideoOpen ? (
+                  <div className={style.videoOverlay}>
+                    <YouTube videoUrl={video} />
+                    <button className={style.closeButton} onClick={handleCloseVideo}>
+                      <i className="fa-solid fa-xmark" />
+                    </button>
+                  </div>
+                ) : (
                   <Galeria imagenes={imagenes} />
-                </section>
+                )}
               </div>
-              <aside className={style.aside}>
-                <p className={style.parrafo}>{descripcion}</p>
-                <h1 className={style.subtitulo}>{nombre}</h1>
-                <footer className={style.footer}>
-                  <NavLink to={github} target="_blank" className={style.github}>
-                  <i class="fa-brands fa-github" style={{ cursor: "pointer", marginBottom: "1svh" }} />
+              
+              <div className={style.info}>
+                <h3 className={style.projectTitle}>{nombre}</h3>
+                <p className={style.projectDesc}>{descripcion}</p>
+                
+                <footer className={style.cardFooter}>
+                  <NavLink to={github} target="_blank" className={style.githubLink}>
+                    <i className="fa-brands fa-github" /> Código
                   </NavLink>
-                  <i onClick={() => handler(nombre)} class="fa-brands fa-youtube" style={{ cursor: "pointer" }} />
+                  {video && (
+                    <button onClick={() => handleOpenVideo(nombre)} className={style.videoLink}>
+                      <i className="fa-brands fa-youtube" /> Demo
+                    </button>
+                  )}
                 </footer>
-              </aside>
-            </section>
-          )
+              </div>
+            </article>
+          );
         })}
       </main>
     </div>
